@@ -99,4 +99,70 @@ class ReservationController {
             redirect(action: "show", id: id)
         }
     }
+	def reserver(Long id){
+
+	
+	
+		
+		def session = request.getSession(true);
+		if(!session.getAttribute("reservation")) {
+			session.setAttribute("reservation", new Reservation(code : "none",livres:new HashSet()))
+		}
+
+		
+		
+		def reservation= (Reservation) session.getAttribute("reservation")
+		
+		
+	
+			
+				Livre l= Livre.findById(id)
+		
+				
+				
+				boolean exist=false;
+			//	l?.reservations?.add(reservation)
+				
+				for(monlivre in reservation.livres)
+				{if(monlivre?.titre.equals(l?.titre))
+					exist=true
+				}
+				if(!exist)
+				reservation.livres.add(l)
+				
+			
+			println reservation.livres.toString()
+		session.setAttribute("reservation", reservation)
+		def test=session["reservation"]
+		println test.livres.isEmpty()
+		redirect(action: "listLivre", controller:"livre")
+	}
+	
+	def supprimer(Long id)
+	{def reservation= (Reservation) session.getAttribute("reservation")
+		for(mlivre in reservation.livres)
+		{
+			if(mlivre?.id==id)
+			{
+		reservation?.livres.remove(mlivre)
+		break;
+		}
+		
+		}
+		
+		session.setAttribute("reservation", reservation)
+		
+		redirect(action: "listLivre", controller:"livre")
+		}
+	def supprimerTout()
+	{def reservation= (Reservation) session.getAttribute("reservation")
+		
+		//reservation?.livres.removeAll();
+		
+		session.invalidate();
+		//session.setAttribute("reservation", reservation)
+		
+		redirect(action: "listLivre", controller:"livre")
+		}
 }
+

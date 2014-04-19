@@ -8,7 +8,7 @@ class Reservation {
 	Date dateReservation
 	
 	static hasMany = [livres : Livre]
-	
+	static belongsTo = Livre
 
 	static constraints = {
 		code(nullable:false)
@@ -19,5 +19,5 @@ class Reservation {
 		return code;
 	}
 	
-
+	
 }

@@ -14,7 +14,7 @@ class Auteur {
 	
 	@Override
 	public String toString() {
-		return prenom+" "+nom;
+		return nom+" "+prenom;
 	}
 	
 }

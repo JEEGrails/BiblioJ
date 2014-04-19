@@ -47,6 +47,6 @@
 		<g:message code="livre.reservations.label" default="Reservations" />
 		
 	</label>
-	
+	<g:select name="reservations" from="${biblio.Reservation.list()}" multiple="multiple" optionKey="id" size="5" value="${livreInstance?.reservations*.id}" class="many-to-many"/>
 </div>
 

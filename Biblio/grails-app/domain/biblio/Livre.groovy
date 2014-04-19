@@ -10,14 +10,10 @@ class Livre {
 	TypeDocument type
 	
 	
-	static belongsTo = [Auteur, Reservation] 
+	static belongsTo = Auteur
     static hasMany = [auteurs:Auteur,reservations : Reservation]	
 	
-	static mapping = {
-		auteurs fetch:"join"
-		reservations fetch:"join"
-		
-		 }
+
 	
 	static constraints = {
 		titre(nullable:false)
@@ -25,5 +21,9 @@ class Livre {
 		nombreExemplaires(min : 0)
 		nombreExemplairesDisponibles(min : 0)
     }
-		
+		String toString()
+		    {
+				return titre
+				
+			}
 }

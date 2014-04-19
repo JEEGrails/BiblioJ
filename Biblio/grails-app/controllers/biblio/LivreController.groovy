@@ -11,10 +11,52 @@ class LivreController {
     }
 
     def list(Integer max) {
-        params.max = Math.min(max ?: 10, 100)
+       
         [livreInstanceList: Livre.list(params), livreInstanceTotal: Livre.count()]
     }
 
+	def listLivre(Integer max) {
+		params.max = Math.min(max ?: 5, 100)
+		[livreInstanceList: Livre.list(params), livreInstanceTotal: Livre.count()]
+		
+		
+		}
+
+	def recherche(Integer max) {
+		
+		params.max = Math.min(max ?: 5, 100)
+		if(request.getParameter("titre")||request.getParameter("type")||request.getParameter("auteur"))
+		{
+			println"exe"
+		
+		def titre="%"+request.getParameter("titre")+"%"
+		def type="%"+request.getParameter("type")+"%"
+		def auteur="%"+request.getParameter("auteur")+"%"
+		
+	   def criteria = Livre.createCriteria()
+		def livres = criteria.list(params){
+			'in' ("type", TypeDocument.findAllByIntituleIlike(type))
+			'or' {
+					auteurs { ilike("nom", auteur) }
+					auteurs { ilike ("prenom", auteur) }
+				}
+			'ilike' ("titre", titre)
+		   
+		}
+		
+		
+			 [livreInstanceList:livres, livreInstanceTotal: livres.totalCount]
+		}
+		else
+		{
+			
+			println "tt"
+		
+		
+			[livreInstanceList: Livre.list(params), livreInstanceTotal: Livre.count()]
+		}
+		}
+	
     def create() {
         [livreInstance: new Livre(params)]
     }
