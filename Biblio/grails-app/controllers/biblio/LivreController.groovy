@@ -16,6 +16,12 @@ class LivreController {
     }
 
 	def listLivre(Integer max) {
+		
+	
+
+		
+		
+		
 		params.max = Math.min(max ?: 5, 100)
 		[livreInstanceList: Livre.list(params), livreInstanceTotal: Livre.count()]
 		

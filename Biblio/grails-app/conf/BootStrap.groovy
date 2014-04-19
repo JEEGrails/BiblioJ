@@ -18,9 +18,9 @@ class BootStrap {
 		def auteur5 = new Auteur(nom: "5",prenom:"Grégoire").save(failOnError : true)
 		def auteur6 = new Auteur(nom: "6",prenom:"Stieg").save(failOnError : true)
 
-		def livre1 = new Livre(type: type1,titre: "Hunger games [Texte imprimé]",nombreExemplaires :10,nombreExemplairesDisponibles : 10)
+		def livre1 = new Livre(type: type1,titre: "Hunger games [Texte imprimé]",nombreExemplaires :10,nombreExemplairesDisponibles :0)
 		livre1.addToAuteurs(auteur1).save(failOnError : true)
-		def livre2 = new Livre(type: type2,titre: "La couleur des sentiments",nombreExemplaires :10,nombreExemplairesDisponibles : 10)
+		def livre2 = new Livre(type: type2,titre: "La couleur des sentiments",nombreExemplaires :10,nombreExemplairesDisponibles : 1)
 		livre2.addToAuteurs(auteur2).save(failOnError : true)
 		def livre3 = new Livre(type: type1,titre: "L'embrasement",nombreExemplaires :10,nombreExemplairesDisponibles : 10)
 		livre3.addToAuteurs(auteur1).save(failOnError : true)
