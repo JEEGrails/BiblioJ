@@ -40,7 +40,7 @@ grails.project.dependency.resolution = {
 
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
-
+		
         // runtime 'mysql:mysql-connector-java:5.1.22'
     }
 
@@ -57,7 +57,7 @@ grails.project.dependency.resolution = {
         build ":tomcat:$grailsVersion"
 
         runtime ":database-migration:1.3.2"
-
+		compile ":mail:1.0.4"
         compile ':cache:1.0.1'
     }
 }

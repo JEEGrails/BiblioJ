@@ -89,3 +89,16 @@ log4j = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
+grails {
+	mail {
+	   host = "smtp.gmail.com"
+     port = 465
+	  username = "bibliojbiblioj@gmail.com"
+	  password = "mehdimehdi"
+	 props = ["mail.smtp.auth":"true", 					   
+              "mail.smtp.socketFactory.port":"587 ",
+              "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
+              "mail.smtp.socketFactory.fallback":"false"]
+	}
+ }

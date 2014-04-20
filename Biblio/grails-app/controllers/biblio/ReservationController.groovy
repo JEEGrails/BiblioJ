@@ -127,6 +127,7 @@ class ReservationController {
 				{if(monlivre?.titre.equals(l?.titre))
 					exist=true
 				}
+			
 				if(!exist)
 				reservation.livres.add(l)
 				
@@ -164,5 +165,71 @@ class ReservationController {
 		
 		redirect(action: "listLivre", controller:"livre")
 		}
+	def panier()
+	{
+		
+		
+	}
+	
+	
+	def validerPanier()
+	{
+		
+		String codes =  org.apache.commons.lang.RandomStringUtils.randomAlphanumeric(8)
+		while(Reservation.findByCode(codes) != null) {
+			codes = org.apache.commons.lang.RandomStringUtils.randomAlphanumeric(8)
+		}
+		
+		def reservation= (Reservation) session.getAttribute("reservation")
+	List<Livre> listLivreIndisponible=new ArrayList<>();
+	def reservationInstance = new Reservation(code:codes,dateReservation:new Date())
+	reservationInstance.livres=new HashSet();
+	
+		for(livre in reservation.livres)
+		{
+			Livre l =Livre.findById(livre?.id)
+		if(l.nombreExemplairesDisponibles)	{
+			l.setNombreExemplairesDisponibles(l.nombreExemplairesDisponibles-1)
+		
+	
+			
+	
+			if (!l.save(flush: true)) {
+				render(view: "panier")
+				return
+			}	
+			reservationInstance.livres.add(l);
+			reservationInstance.addToLivres(l).save();
+				
+			}
+		else
+		{
+			listLivreIndisponible.add(l);
+			
+			}
+		
+		}
+		session["listLivreIndisponible"]=listLivreIndisponible
+		
+		session["reservation"]=null
+		render(view: "panier", model: [reservationInstance: reservationInstance])
+	
+		
+	}
+	
+	  def envoiMail(){
+		 String email= request.getParameter("email")
+		 def code=request.getParameter("code")
+		 def livres=request.getParameter("livres")
+		 
+		 sendMail {
+			 to email
+			 subject "Reservation Sur BiblioJ"
+			html "<body>Bonjour<br/> votre code de reservation est :"+code+" <br/> vous avez commandez"+livres+"              </body>"
+		   }
+		 render(controller: "livre", view: "listLivre")
+	  }
 }
+
+    
 
