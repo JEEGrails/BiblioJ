@@ -86,7 +86,7 @@
                 
                 
           <div class="cart">
-            <div class="title"><span class="title_icon"><img src="${resource(dir: 'images', file: 'cart.gif')}" alt="Panier"/></span>Mon Panier</div>
+            <div class="title"><span class="title_icon"><g:link controller="reservation" action="panier"><img src="${resource(dir: 'images', file: 'cart.gif')}" alt="Panier"/></span>Mon Panier</g:link></div>
           </div>
           <div class="about">
             <p>	
@@ -95,12 +95,13 @@
 		
 		<br/>
 		<g:each in="${session.reservation.livres}" status="i" var="livreInstance">
-					${livreInstance.titre}
-					<g:link action="supprimer" controller="reservation" id="${livreInstance.id}">SUPPRIMER<br/></g:link>
+				<g:link action="supprimer" controller="reservation" id="${livreInstance.id}"><img src="${resource(dir: 'images', file: 'Delete.png')}" width="21" height="18" alt="Panier"/>&nbsp;&nbsp;</g:link>	${livreInstance.titre}
+					
 					<br/>
 				</g:each>
-				<g:link action="supprimerTout" controller="reservation">SUPPRIMER tout</g:link>
-	
+				<br/><br/><center>
+				<g:link action="supprimerTout" controller="reservation"><img src="${resource(dir: 'images', file: 'DeleteAll.png')}" width="60" height="80" alt="Vider le panier" title="Vider le panier"/></g:link>
+	</center>
 	
 		</g:if>
 	 </p>

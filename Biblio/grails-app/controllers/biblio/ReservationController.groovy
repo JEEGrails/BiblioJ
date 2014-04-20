@@ -227,7 +227,7 @@ class ReservationController {
 			 subject "Reservation Sur BiblioJ"
 			html "<body>Bonjour<br/> votre code de reservation est :"+code+" <br/> vous avez commandez"+livres+"              </body>"
 		   }
-		 render(controller: "livre", view: "listLivre")
+		 redirect(action: "listLivre", controller: "livre" )
 	  }
 }
 
