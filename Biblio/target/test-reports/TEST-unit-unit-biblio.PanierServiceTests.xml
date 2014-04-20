@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="1" hostname="Haithem" name="biblio.PanierServiceTests" tests="1" time="0.198" timestamp="2014-04-20T23:10:43">
+  <properties />
+  <testcase classname="biblio.PanierServiceTests" name="testSomething" time="0.023">
+    <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at biblio.PanierServiceTests.testSomething(PanierServiceTests.groovy:15)
+</failure>
+  </testcase>
+  <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+  <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+</testsuite>

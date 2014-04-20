@@ -1,0 +1,116 @@
+Testsuite: biblio.LivreControllerTests
+Tests run: 8, Failures: 5, Errors: 0, Time elapsed: 1,166 sec
+------------- Standard Output ---------------
+--Output from testCreate--
+--Output from testList--
+--Output from testIndex--
+--Output from testSave--
+--Output from testShow--
+--Output from testEdit--
+--Output from testUpdate--
+--Output from testDelete--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testCreate--
+--Output from testList--
+--Output from testIndex--
+--Output from testSave--
+--Output from testShow--
+--Output from testEdit--
+--Output from testUpdate--
+--Output from testDelete--
+------------- ---------------- ---------------
+
+Testcase: testCreate took 0,394 sec
+Testcase: testList took 0,071 sec
+Testcase: testIndex took 0,088 sec
+Testcase: testSave took 0,129 sec
+	FAILED
+Assertion failed: 
+
+assert response.redirectedUrl == '/livre/show/1'
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@a84074
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == '/livre/show/1'
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@a84074
+
+	at biblio.LivreControllerTests.testSave(LivreControllerTests.groovy:48)
+
+Testcase: testShow took 0,08 sec
+	FAILED
+Assertion failed: 
+
+assert livre.save() != null
+       |     |      |
+       |     null   false
+       biblio.Livre@e327f8 (toString() == null)
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert livre.save() != null
+       |     |      |
+       |     null   false
+       biblio.Livre@e327f8 (toString() == null)
+
+	at biblio.LivreControllerTests.testShow(LivreControllerTests.groovy:62)
+
+Testcase: testEdit took 0,065 sec
+	FAILED
+Assertion failed: 
+
+assert livre.save() != null
+       |     |      |
+       |     null   false
+       biblio.Livre@183b617 (toString() == null)
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert livre.save() != null
+       |     |      |
+       |     null   false
+       biblio.Livre@183b617 (toString() == null)
+
+	at biblio.LivreControllerTests.testEdit(LivreControllerTests.groovy:80)
+
+Testcase: testUpdate took 0,126 sec
+	FAILED
+Assertion failed: 
+
+assert livre.save() != null
+       |     |      |
+       |     null   false
+       biblio.Livre@1660eb7 (toString() == null)
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert livre.save() != null
+       |     |      |
+       |     null   false
+       biblio.Livre@1660eb7 (toString() == null)
+
+	at biblio.LivreControllerTests.testUpdate(LivreControllerTests.groovy:100)
+
+Testcase: testDelete took 0,078 sec
+	FAILED
+Assertion failed: 
+
+assert livre.save() != null
+       |     |      |
+       |     null   false
+       biblio.Livre@19147c8 (toString() == null)
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert livre.save() != null
+       |     |      |
+       |     null   false
+       biblio.Livre@19147c8 (toString() == null)
+
+	at biblio.LivreControllerTests.testDelete(LivreControllerTests.groovy:144)
+

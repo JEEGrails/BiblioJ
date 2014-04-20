@@ -25,13 +25,15 @@
        
        <div class="center_content">
        	<div class="left_content">	
+       	<div class="clear"></div>
+		<br/><br/>
 	<g:form action="recherche" method="post">
-		
-		Recherche:<br/>
+		<br/><br/><span style="text-align: center; color: #039; font-size: 16px;">
+		Recherche:</span><br/>
 		<g:textField name="auteur"  placeholder="Auteur"  />
 		<g:textField name="type" placeholder="Type" />
 		<g:textField name="titre"  placeholder="Titre" />
-		<g:submitButton  name="GoOOOOs!" />
+		<g:submitButton  name="Rechercher" />
 	</g:form>
 	<br/><br/><br/>
 	<div  role="main">

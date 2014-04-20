@@ -57,11 +57,14 @@
 
 			</g:if>
 		<g:if test="${reservationInstance}" >
-		<center> <span style="text-align: center; color: #F60; font-size: 16px;">CODE RESERVATION :</span>
+		 <span style="text-align: center; color: #F60; font-size: 16px;">Code de Reservation :</span>
 		<span style="text-align: center; color: #039; font-size: 16px;">&nbsp; &nbsp;${reservationInstance.code}</span><br/><br/><br/>
-		<span style="text-align: center; color: #F60; font-size: 16px;"> liste des livres :</span>
-		<span style="text-align: center; color: #039; font-size: 16px;">&nbsp; &nbsp;${reservationInstance.livres}<br/></span>
-		
+		<span style="text-align: center; color: #F60; font-size: 16px;"> liste des livres reservés :</span><ul>
+		<g:each in="${reservationInstance.livres}" status="i" var="l">
+		<span style=" color: #039; font-size: 16px;">&nbsp; &nbsp;<li>${l}</li></span>
+		</g:each></ul>
+		<div class="clear"></div>
+		<br/><br/><br/><br/><span style="text-align: center; color: #039; font-size: 16px;">Entrer votre adresse mail pour recevoir votre code de reservation :</span>
 		<br/><br/><br/><g:form action="envoiMail" controller="reservation" method="post">
 		
 		<g:field type="email" name="email"  placeholder="email"/>
@@ -74,11 +77,11 @@
 		
 		<g:if test="${session.listLivreIndisponible}" >
 		<g:each in="${session.listLivreIndisponible}" status="i" var="l">
-		erf plus de livre    :${l}<br/>
+		<span style="text-align: center; color: #F60; font-size: 16px;">  ces Livre(s) ne sont plus disponible(s):</span> <span style="text-align: center; color: #039; font-size: 16px;">${l}</span><br/>
 		</g:each>
 		
 		</g:if>
-		</center>
+		
 		</div>
 	 </div>	
        <div class="clear"></div>

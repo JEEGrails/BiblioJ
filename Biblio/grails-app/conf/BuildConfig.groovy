@@ -55,7 +55,7 @@ grails.project.dependency.resolution = {
         //runtime ":yui-minify-resources:0.1.5"
 
         build ":tomcat:$grailsVersion"
-
+		test ":code-coverage:1.2.7"
         runtime ":database-migration:1.3.2"
 		compile ":mail:1.0.4"
         compile ':cache:1.0.1'
