@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* 
+	Grey Suits you Sir. Please host the images on your own server.
+	written by Stuart Colville http://www.muffinresearch.co.uk
+*/
+
+table,td
+{
+	border               : 1px solid #CCC;
+	border-collapse      : collapse;
+  font                 : small/1.5 "Tahoma", "Bitstream Vera Sans", Verdana, Helvetica, sans-serif;
+}
+
+table
+{
+	border                :none;
+	border                :1px solid ;
+}
+thead th,
+tbody th
+{
+	background            : #333 url(../th_bck.gif) repeat-x;
+  color                 : #FFF;  
+   
+	padding               : 5px 10px;
+  border-left           : 0px solid ;
+}
+tbody th
+{
+  background            : #666;
+  border-top            : 0px solid #069;
+  text-align            : left;
+  font-weight           : "Times New Roman", Times, serif  ;
+}
+tbody tr td
+{
+	padding               : 20px 10px;
+  color                 : #666;
+}
+tbody tr:hover
+{
+  background            : #CCC url(../tr_bck.gif) repeat;
+}
+
+tbody tr:hover td
+{
+  color                 : #06F;
+}
+tfoot td,
+tfoot th
+{
+  border-left           : none;
+  border-top            : 1px solid #C3F;
+	padding               : 4px;
+  background            : #C3F url(../foot_bck.gif) repeat;
+  color                 : #C3F;
+}
+caption
+{
+	text-align            : left;
+	font-size             : 120%;
+	padding               : 10px 0;
+	color                 : #C3F;
+}
+table a:link
+{
+	color                 : #039;
+}
+table a:visited
+{
+	color                 : #039;
+}
+table a:hover
+{
+	color                 : #399;
+	text-decoration       : none;
+}
+table a:active
+{
+	color                 : #039;
+}

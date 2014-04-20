@@ -1,122 +1,155 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta name="layout" content="main"/>
-		<title>Welcome to Grails</title>
-		<style type="text/css" media="screen">
-			#status {
-				background-color: #eee;
-				border: .2em solid #fff;
-				margin: 2em 2em 1em;
-				padding: 1em;
-				width: 12em;
-				float: left;
-				-moz-box-shadow: 0px 0px 1.25em #ccc;
-				-webkit-box-shadow: 0px 0px 1.25em #ccc;
-				box-shadow: 0px 0px 1.25em #ccc;
-				-moz-border-radius: 0.6em;
-				-webkit-border-radius: 0.6em;
-				border-radius: 0.6em;
-			}
-
-			.ie6 #status {
-				display: inline; /* float double margin fix http://www.positioniseverything.net/explorer/doubled-margin.html */
-			}
-
-			#status ul {
-				font-size: 0.9em;
-				list-style-type: none;
-				margin-bottom: 0.6em;
-				padding: 0;
-			}
-
-			#status li {
-				line-height: 1.3;
-			}
-
-			#status h1 {
-				text-transform: uppercase;
-				font-size: 1.1em;
-				margin: 0 0 0.3em;
-			}
-
-			#page-body {
-				margin: 2em 1em 1.25em 18em;
-			}
-
-			h2 {
-				margin-top: 1em;
-				margin-bottom: 0.3em;
-				font-size: 1em;
-			}
-
-			p {
-				line-height: 1.5;
-				margin: 0.25em 0;
-			}
-
-			#controller-list ul {
-				list-style-position: inside;
-			}
-
-			#controller-list li {
-				line-height: 1.3;
-				list-style-position: inside;
-				margin: 0.25em 0;
-			}
-
-			@media screen and (max-width: 480px) {
-				#status {
-					display: none;
-				}
-
-				#page-body {
-					margin: 0 1em 1em;
-				}
-
-				#page-body h1 {
-					margin-top: 0;
-				}
-			}
-		</style>
+		<link rel="stylesheet" href="${resource(dir: 'css', file: 'style.css')}" type="text/css">
+		
+		<title>BiblioJ</title>
+		
 	</head>
 	<body>
-		<a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-		<div id="status" role="complementary">
-			<h1>Application Status</h1>
-			<ul>
-				<li>App version: <g:meta name="app.version"/></li>
-				<li>Grails version: <g:meta name="app.grails.version"/></li>
-				<li>Groovy version: ${GroovySystem.getVersion()}</li>
-				<li>JVM version: ${System.getProperty('java.version')}</li>
-				<li>Reloading active: ${grails.util.Environment.reloadingAgentEnabled}</li>
-				<li>Controllers: ${grailsApplication.controllerClasses.size()}</li>
-				<li>Domains: ${grailsApplication.domainClasses.size()}</li>
-				<li>Services: ${grailsApplication.serviceClasses.size()}</li>
-				<li>Tag Libraries: ${grailsApplication.tagLibClasses.size()}</li>
-			</ul>
-			<h1>Installed Plugins</h1>
-			<ul>
-				<g:each var="plugin" in="${applicationContext.getBean('pluginManager').allPlugins}">
-					<li>${plugin.name} - ${plugin.version}</li>
-				</g:each>
-			</ul>
-		</div>
-		<div id="page-body" role="main">
-			<h1>Welcome to Grails</h1>
-			<p>Congratulations, you have successfully started your first Grails application! At the moment
-			   this is the default page, feel free to modify it to either redirect to a controller or display whatever
-			   content you may choose. Below is a list of controllers that are currently deployed in this application,
-			   click on each to execute its default action:</p>
+	<div id="wrap">
 
-			<div id="controller-list" role="navigation">
-				<h2>Available Controllers:</h2>
+       <div class="header">
+       		<div class="logo" style="font-size: 28px">BiblioJ</div>            
+        <div id="menu">
+            <ul>                                                                       
+            <li class="selected"><a >Acceuil</a></li>
+            
+            <li><g:link controller="livre" action="listLivre">Liste des livres</g:link></li>
+            
+          </ul>
+        </div>     
+            
+            
+       </div> 
+       
+       
+       <div class="center_content">
+		
+		<div class="left_content">
+        	
+            <div class="title"><span class="title_icon"><img src="${resource(dir: 'images', file: 'bullet1.gif')}" alt="titres"  /></span>Titres plus recherchés</div>
+        
+        	<div class="feat_prod_box">
+        	<div class="prod_img"><img src="${resource(dir: 'images', file: 'opposeNuit.jpg')}" alt="nuit" width="98" height="150"  border="0" /></div>
+                
+                <div class="prod_det_box">
+                	<div class="box_top"></div>
+                    <div class="box_center">
+                    <div class="prod_title">Rien ne s'oppose à la nuit</div>
+                    <p class="details">Delphine de Vigan, suite au suicide de sa mère, écrit sur celle-ci dans un roman en trois parties. L'enfance de Lucile (sa mère), et sa vie d'adulte qui débute réellement à la naissance de l'auteur.</p>
+                    <a  class="more">- Reserver -</a>
+                    <div class="clear"></div>
+                    </div>
+                    
+                    <div class="box_bottom"></div>
+                </div>    
+            <div class="clear"></div>
+            
+            	<div class="prod_img"><img src="${resource(dir: 'images', file: 'Hunger.jpg')}" alt="Hunger" width="98" height="150" border="0" /></div>
+                
+                <div class="prod_det_box">
+                	<div class="box_top"></div>
+                    <div class="box_center">
+                    <div class="prod_title">The Hunger Games</div>
+                    <p class="details">Cette histoire raconte l'aventure de Katniss Everdeen. Elle vit dans un  pays se nommant Panem. Dans ce pays, il existe douze districts dirigés par un puissant gouvernement : le Capitole. Il dirige Panem depuis la période de guerre qui a détruit le 13 ème district..</p>
+                    <a  class="more">- Reserver -</a>
+                    <div class="clear"></div>
+                    </div>
+                    
+                    <div class="box_bottom"></div>
+                </div>    
+            <div class="clear"></div>
+            
+            </div>
+       	   <div class="title"><span class="title_icon"><img src="${resource(dir: 'images', file: 'bullet2.gif')}" alt="nouveaux"  /></span>Nouveaux Livres</div> 
+           
+           <div class="new_products">
+           
+                    <div class="new_prod_box">
+                        L'art français de la guerre
+                        <div class="new_prod_bg">
+                        <span class="new_icon"><img src="${resource(dir: 'images', file: 'new_icon.gif')}" alt="New"  /></span>
+                        <img src="${resource(dir: 'images', file: 'artFrancais.jpeg')}" alt="film" width="60" height="90" class="thumb" border="0" />
+                        </div>           
+                    </div>
+                    
+                    <div class="new_prod_box">
+                        1Q84. 2. Juillet-septembre
+                        <div class="new_prod_bg">
+                        <span class="new_icon"><img src="${resource(dir: 'images', file: 'new_icon.gif')}" alt="New"  /></span>
+                        <img src="${resource(dir: 'images', file: '1q84.jpg')}" alt="film" width="60" height="90" class="thumb" border="0" />
+                        </div>          
+                    </div>                    
+                    
+                    <div class="new_prod_box">
+                        La couleur des sentiments
+                        <div class="new_prod_bg">
+                        <span class="new_icon"> <img src="${resource(dir: 'images', file: 'new_icon.gif')}" alt="New"  /></span>
+                        <img src="${resource(dir: 'images', file: 'couleurSentiments.jpg')}" alt="film" width="60" height="90" class="thumb" border="0" />
+                        </div>           
+                    </div>          
+            
+            </div> 
+          
+            
+        <div class="clear"></div>
+        </div><!--end of left content-->
+        
+		
+				
+			
+		 <div class="right_content">
+        	
+               
+                
+                
+          <div class="cart">
+            <div class="title"><span class="title_icon"><img src="${resource(dir: 'images', file: 'cart.gif')}" alt="Panier" /></span>Mon Panier</div>
+          </div>
+          <div class="about">
+            <p>	
+		
+		<g:if test="${session.reservation}"> 
+		
+		<br/>
+		<g:each in="${session.reservation.livres}" status="i" var="livreInstance">
+					${livreInstance.titre}
+					<g:link action="supprimer" controller="reservation" id="${livreInstance.id}">SUPPRIMER</g:link>
+					<br/>
+				</g:each>
+				<g:link action="supprimerTout" controller="reservation">SUPPRIMER tout</g:link>
+					
+		</g:if>
+		 </p>
+             
+          </div>
+          <h2>Available Controllers:</h2>
 				<ul>
 					<g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
 						<li class="controller"><g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link></li>
 					</g:each>
 				</ul>
-			</div>
-		</div>
+        </div><!--end of right content-->
+        
+        
+       
+       
+       <div class="clear"></div>
+       </div><!--end of center content-->
+       
+              
+       <div class="footer">
+       	<div class="left_footer"></div>
+        <div class="right_footer">
+        
+       
+        </div>
+        
+       
+       </div>
+    
+
+</div>
 	</body>
 </html>
