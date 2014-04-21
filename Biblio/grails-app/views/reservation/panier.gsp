@@ -59,6 +59,11 @@
 		<g:if test="${reservationInstance}" >
 		 <span style="text-align: center; color: #F60; font-size: 16px;">Code de Reservation :</span>
 		<span style="text-align: center; color: #039; font-size: 16px;">&nbsp; &nbsp;${reservationInstance.code}</span><br/><br/><br/>
+		
+		<span style="text-align: center; color: #F60; font-size: 16px;"> Vous devez recuperer votre reservation avant :</span><ul>
+		
+		<span style="text-align: center; color: #039; font-size: 16px;">&nbsp; &nbsp;${datePourRendre}</span><br/><br/><br/>
+		
 		<span style="text-align: center; color: #F60; font-size: 16px;"> liste des livres reservés :</span><ul>
 		<g:each in="${reservationInstance.livres}" status="i" var="l">
 		<span style=" color: #039; font-size: 16px;">&nbsp; &nbsp;<li>${l}</li></span>
@@ -70,6 +75,7 @@
 		<g:field type="email" name="email"  placeholder="email"/>
 		<g:hiddenField name="code" value="${reservationInstance.code}" />
 		<g:hiddenField name="livres"  value="${reservationInstance.livres}"/>
+		<g:hiddenField name="date"  value="${datePourRendre}"/>
 		<g:submitButton  name="envoi!" />
 	</g:form>
 		</g:if>

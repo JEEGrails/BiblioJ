@@ -5,7 +5,7 @@ import org.springframework.dao.DataIntegrityViolationException
 class ReservationController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
-
+    AddDaysService addDaysService=new AddDaysService();
     def index() {
         redirect(action: "list", params: params)
     }
@@ -212,7 +212,15 @@ class ReservationController {
 		session["listLivreIndisponible"]=listLivreIndisponible
 		
 		session["reservation"]=null
-		render(view: "panier", model: [reservationInstance: reservationInstance])
+		Date myDate=addDaysService.addDays(reservationInstance.dateReservation, 1)
+		
+		
+		String	myString = java.text.DateFormat.getDateInstance().format(myDate);
+		myString=myString+"  "+myDate.getHours()+":"+myDate.getMinutes();
+		System.out.println(myString);
+		
+		def datePourRendre=myString
+		render(view: "panier", model: [reservationInstance: reservationInstance,datePourRendre: datePourRendre])
 	
 		
 	}
@@ -221,14 +229,17 @@ class ReservationController {
 		 String email= request.getParameter("email")
 		 def code=request.getParameter("code")
 		 def livres=request.getParameter("livres")
+		 def date=request.getParameter("date")
 		 
 		 sendMail {
 			 to email
 			 subject "Reservation Sur BiblioJ"
-			html "<body>Bonjour<br/> votre code de reservation est :"+code+" <br/> vous avez commandez"+livres+"              </body>"
+			html "<body>Bonjour<br/> votre code de reservation est : <b>"+code+"</b> <br/>vous devez recuperer votres reservation avant : "+date+"<br/> vous avez commandez les livres : "+livres+"              </body>"
 		   }
 		 redirect(action: "listLivre", controller: "livre" )
 	  }
+	  
+	  
 }
 
     

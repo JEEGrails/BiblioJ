@@ -1,6 +1,0 @@
-package biblio
-
-class PanierService {
-	
-
-}
