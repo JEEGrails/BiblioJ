@@ -1,80 +1,80 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="5" hostname="Haithem" name="biblio.ReservationControllerTests" tests="8" time="1.068" timestamp="2014-04-20T23:10:44">
+<testsuite errors="0" failures="5" hostname="Elmahdi-pc" name="biblio.ReservationControllerTests" tests="8" time="0.913" timestamp="2014-04-21T01:46:50">
   <properties />
-  <testcase classname="biblio.ReservationControllerTests" name="testCreate" time="0.35" />
-  <testcase classname="biblio.ReservationControllerTests" name="testList" time="0.1" />
-  <testcase classname="biblio.ReservationControllerTests" name="testIndex" time="0.099" />
-  <testcase classname="biblio.ReservationControllerTests" name="testSave" time="0.065">
-    <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/reservation/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@4a041&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+  <testcase classname="biblio.ReservationControllerTests" name="testList" time="0.287" />
+  <testcase classname="biblio.ReservationControllerTests" name="testSave" time="0.066">
+    <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/reservation/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@7e6a60a&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
 
 assert response.redirectedUrl == &apos;/reservation/show/1&apos;
        |        |             |
        |        null          false
-       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@4a041
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@7e6a60a
 
 	at biblio.ReservationControllerTests.testSave(ReservationControllerTests.groovy:48)
 </failure>
   </testcase>
-  <testcase classname="biblio.ReservationControllerTests" name="testShow" time="0.104">
-    <failure message="Assertion failed: &#xa;&#xa;assert reservation.save() != null&#xa;       |           |      |&#xa;       |           null   false&#xa;       biblio.Reservation@1e32883 (toString() == null)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+  <testcase classname="biblio.ReservationControllerTests" name="testDelete" time="0.116">
+    <failure message="Assertion failed: &#xa;&#xa;assert reservation.save() != null&#xa;       |           |      |&#xa;       |           null   false&#xa;       biblio.Reservation@882ae42 (toString() == null)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
 
 assert reservation.save() != null
        |           |      |
        |           null   false
-       biblio.Reservation@1e32883 (toString() == null)
-
-	at biblio.ReservationControllerTests.testShow(ReservationControllerTests.groovy:62)
-</failure>
-  </testcase>
-  <testcase classname="biblio.ReservationControllerTests" name="testEdit" time="0.066">
-    <failure message="Assertion failed: &#xa;&#xa;assert reservation.save() != null&#xa;       |           |      |&#xa;       |           null   false&#xa;       biblio.Reservation@1cb087d (toString() == null)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
-
-assert reservation.save() != null
-       |           |      |
-       |           null   false
-       biblio.Reservation@1cb087d (toString() == null)
-
-	at biblio.ReservationControllerTests.testEdit(ReservationControllerTests.groovy:80)
-</failure>
-  </testcase>
-  <testcase classname="biblio.ReservationControllerTests" name="testUpdate" time="0.059">
-    <failure message="Assertion failed: &#xa;&#xa;assert reservation.save() != null&#xa;       |           |      |&#xa;       |           null   false&#xa;       biblio.Reservation@fd2eb8 (toString() == null)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
-
-assert reservation.save() != null
-       |           |      |
-       |           null   false
-       biblio.Reservation@fd2eb8 (toString() == null)
-
-	at biblio.ReservationControllerTests.testUpdate(ReservationControllerTests.groovy:100)
-</failure>
-  </testcase>
-  <testcase classname="biblio.ReservationControllerTests" name="testDelete" time="0.092">
-    <failure message="Assertion failed: &#xa;&#xa;assert reservation.save() != null&#xa;       |           |      |&#xa;       |           null   false&#xa;       biblio.Reservation@1065535 (toString() == null)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
-
-assert reservation.save() != null
-       |           |      |
-       |           null   false
-       biblio.Reservation@1065535 (toString() == null)
+       biblio.Reservation@882ae42 (toString() == null)
 
 	at biblio.ReservationControllerTests.testDelete(ReservationControllerTests.groovy:144)
 </failure>
   </testcase>
-  <system-out><![CDATA[--Output from testCreate--
---Output from testList--
---Output from testIndex--
+  <testcase classname="biblio.ReservationControllerTests" name="testUpdate" time="0.075">
+    <failure message="Assertion failed: &#xa;&#xa;assert reservation.save() != null&#xa;       |           |      |&#xa;       |           null   false&#xa;       biblio.Reservation@188651b8 (toString() == null)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert reservation.save() != null
+       |           |      |
+       |           null   false
+       biblio.Reservation@188651b8 (toString() == null)
+
+	at biblio.ReservationControllerTests.testUpdate(ReservationControllerTests.groovy:100)
+</failure>
+  </testcase>
+  <testcase classname="biblio.ReservationControllerTests" name="testIndex" time="0.083" />
+  <testcase classname="biblio.ReservationControllerTests" name="testShow" time="0.062">
+    <failure message="Assertion failed: &#xa;&#xa;assert reservation.save() != null&#xa;       |           |      |&#xa;       |           null   false&#xa;       biblio.Reservation@64693063 (toString() == null)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert reservation.save() != null
+       |           |      |
+       |           null   false
+       biblio.Reservation@64693063 (toString() == null)
+
+	at biblio.ReservationControllerTests.testShow(ReservationControllerTests.groovy:62)
+</failure>
+  </testcase>
+  <testcase classname="biblio.ReservationControllerTests" name="testEdit" time="0.082">
+    <failure message="Assertion failed: &#xa;&#xa;assert reservation.save() != null&#xa;       |           |      |&#xa;       |           null   false&#xa;       biblio.Reservation@7fc415f3 (toString() == null)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert reservation.save() != null
+       |           |      |
+       |           null   false
+       biblio.Reservation@7fc415f3 (toString() == null)
+
+	at biblio.ReservationControllerTests.testEdit(ReservationControllerTests.groovy:80)
+</failure>
+  </testcase>
+  <testcase classname="biblio.ReservationControllerTests" name="testCreate" time="0.046" />
+  <system-out><![CDATA[--Output from testList--
 --Output from testSave--
+--Output from testDelete--
+--Output from testUpdate--
+--Output from testIndex--
 --Output from testShow--
 --Output from testEdit--
---Output from testUpdate--
---Output from testDelete--
+--Output from testCreate--
 ]]></system-out>
-  <system-err><![CDATA[--Output from testCreate--
---Output from testList--
---Output from testIndex--
+  <system-err><![CDATA[--Output from testList--
 --Output from testSave--
+--Output from testDelete--
+--Output from testUpdate--
+--Output from testIndex--
 --Output from testShow--
 --Output from testEdit--
---Output from testUpdate--
---Output from testDelete--
+--Output from testCreate--
 ]]></system-err>
 </testsuite>

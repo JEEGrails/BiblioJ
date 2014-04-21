@@ -1,5 +1,5 @@
 Testsuite: biblio.LivreTests
-Tests run: 1, Failures: 1, Errors: 0, Time elapsed: 0,211 sec
+Tests run: 1, Failures: 1, Errors: 0, Time elapsed: 0,234 sec
 ------------- Standard Output ---------------
 --Output from testSomething--
 ------------- ---------------- ---------------
@@ -7,7 +7,7 @@ Tests run: 1, Failures: 1, Errors: 0, Time elapsed: 0,211 sec
 --Output from testSomething--
 ------------- ---------------- ---------------
 
-Testcase: testSomething took 0,113 sec
+Testcase: testSomething took 0,095 sec
 	FAILED
 junit.framework.AssertionFailedError: Implement me
 junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
