@@ -1,15 +1,31 @@
 Testsuite: biblio.AuteurTests
-Tests run: 1, Failures: 1, Errors: 0, Time elapsed: 0,245 sec
+Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 0,289 sec
 ------------- Standard Output ---------------
---Output from testSomething--
+--Output from testConstraintNomBlank--
+--Output from testConstraintPrenomBlank--
+--Output from testConstraintPrenomNull--
+--Output from testConstraintsValidees--
+--Output from testConstraintNomNull--
+--Output from testToString--
+--Output from testConstraintNomBlankPrenomBlanck--
+--Output from testConstraintNomNullPrenomNull--
 ------------- ---------------- ---------------
 ------------- Standard Error -----------------
---Output from testSomething--
+--Output from testConstraintNomBlank--
+--Output from testConstraintPrenomBlank--
+--Output from testConstraintPrenomNull--
+--Output from testConstraintsValidees--
+--Output from testConstraintNomNull--
+--Output from testToString--
+--Output from testConstraintNomBlankPrenomBlanck--
+--Output from testConstraintNomNullPrenomNull--
 ------------- ---------------- ---------------
 
-Testcase: testSomething took 0,117 sec
-	FAILED
-junit.framework.AssertionFailedError: Implement me
-junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
-	at biblio.AuteurTests.testSomething(AuteurTests.groovy:15)
-
+Testcase: testConstraintNomBlank took 0,065 sec
+Testcase: testConstraintPrenomBlank took 0,014 sec
+Testcase: testConstraintPrenomNull took 0,011 sec
+Testcase: testConstraintsValidees took 0,012 sec
+Testcase: testConstraintNomNull took 0,014 sec
+Testcase: testToString took 0,009 sec
+Testcase: testConstraintNomBlankPrenomBlanck took 0,01 sec
+Testcase: testConstraintNomNullPrenomNull took 0,009 sec

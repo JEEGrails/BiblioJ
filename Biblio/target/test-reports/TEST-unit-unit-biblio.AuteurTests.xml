@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="1" hostname="Haithem" name="biblio.AuteurTests" tests="1" time="0.245" timestamp="2014-04-20T23:10:41">
+<testsuite errors="0" failures="0" hostname="Elmahdi-pc" name="biblio.AuteurTests" tests="8" time="0.289" timestamp="2014-04-21T01:46:48">
   <properties />
-  <testcase classname="biblio.AuteurTests" name="testSomething" time="0.117">
-    <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
-	at biblio.AuteurTests.testSomething(AuteurTests.groovy:15)
-</failure>
-  </testcase>
-  <system-out><![CDATA[--Output from testSomething--
+  <testcase classname="biblio.AuteurTests" name="testConstraintNomBlank" time="0.065" />
+  <testcase classname="biblio.AuteurTests" name="testConstraintPrenomBlank" time="0.014" />
+  <testcase classname="biblio.AuteurTests" name="testConstraintPrenomNull" time="0.011" />
+  <testcase classname="biblio.AuteurTests" name="testConstraintsValidees" time="0.011" />
+  <testcase classname="biblio.AuteurTests" name="testConstraintNomNull" time="0.014" />
+  <testcase classname="biblio.AuteurTests" name="testToString" time="0.009" />
+  <testcase classname="biblio.AuteurTests" name="testConstraintNomBlankPrenomBlanck" time="0.01" />
+  <testcase classname="biblio.AuteurTests" name="testConstraintNomNullPrenomNull" time="0.009" />
+  <system-out><![CDATA[--Output from testConstraintNomBlank--
+--Output from testConstraintPrenomBlank--
+--Output from testConstraintPrenomNull--
+--Output from testConstraintsValidees--
+--Output from testConstraintNomNull--
+--Output from testToString--
+--Output from testConstraintNomBlankPrenomBlanck--
+--Output from testConstraintNomNullPrenomNull--
 ]]></system-out>
-  <system-err><![CDATA[--Output from testSomething--
+  <system-err><![CDATA[--Output from testConstraintNomBlank--
+--Output from testConstraintPrenomBlank--
+--Output from testConstraintPrenomNull--
+--Output from testConstraintsValidees--
+--Output from testConstraintNomNull--
+--Output from testToString--
+--Output from testConstraintNomBlankPrenomBlanck--
+--Output from testConstraintNomNullPrenomNull--
 ]]></system-err>
 </testsuite>
