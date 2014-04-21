@@ -1,5 +1,5 @@
 Testsuite: biblio.TypeDocumentControllerTests
-Tests run: 8, Failures: 5, Errors: 0, Time elapsed: 0,769 sec
+Tests run: 8, Failures: 5, Errors: 0, Time elapsed: 0,88 sec
 ------------- Standard Output ---------------
 --Output from testList--
 --Output from testSave--
@@ -21,96 +21,96 @@ Tests run: 8, Failures: 5, Errors: 0, Time elapsed: 0,769 sec
 --Output from testCreate--
 ------------- ---------------- ---------------
 
-Testcase: testList took 0,293 sec
-Testcase: testSave took 0,077 sec
+Testcase: testList took 0,324 sec
+Testcase: testSave took 0,069 sec
 	FAILED
 Assertion failed: 
 
 assert response.redirectedUrl == '/typeDocument/show/1'
        |        |             |
        |        null          false
-       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@2ccfb3a9
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@3077da0e
 
 junit.framework.AssertionFailedError: Assertion failed: 
 
 assert response.redirectedUrl == '/typeDocument/show/1'
        |        |             |
        |        null          false
-       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@2ccfb3a9
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@3077da0e
 
 	at biblio.TypeDocumentControllerTests.testSave(TypeDocumentControllerTests.groovy:48)
 
-Testcase: testDelete took 0,109 sec
+Testcase: testDelete took 0,134 sec
 	FAILED
 Assertion failed: 
 
 assert typeDocument.save() != null
        |            |      |
        |            null   false
-       biblio.TypeDocument@783b0bce (toString() == null)
+       biblio.TypeDocument@7a84a043 (toString() == null)
 
 junit.framework.AssertionFailedError: Assertion failed: 
 
 assert typeDocument.save() != null
        |            |      |
        |            null   false
-       biblio.TypeDocument@783b0bce (toString() == null)
+       biblio.TypeDocument@7a84a043 (toString() == null)
 
 	at biblio.TypeDocumentControllerTests.testDelete(TypeDocumentControllerTests.groovy:144)
 
-Testcase: testUpdate took 0,061 sec
+Testcase: testUpdate took 0,051 sec
 	FAILED
 Assertion failed: 
 
 assert typeDocument.save() != null
        |            |      |
        |            null   false
-       biblio.TypeDocument@4ee88081 (toString() == null)
+       biblio.TypeDocument@253ce24c (toString() == null)
 
 junit.framework.AssertionFailedError: Assertion failed: 
 
 assert typeDocument.save() != null
        |            |      |
        |            null   false
-       biblio.TypeDocument@4ee88081 (toString() == null)
+       biblio.TypeDocument@253ce24c (toString() == null)
 
 	at biblio.TypeDocumentControllerTests.testUpdate(TypeDocumentControllerTests.groovy:100)
 
-Testcase: testIndex took 0,053 sec
-Testcase: testShow took 0,054 sec
+Testcase: testIndex took 0,046 sec
+Testcase: testShow took 0,055 sec
 	FAILED
 Assertion failed: 
 
 assert typeDocument.save() != null
        |            |      |
        |            null   false
-       biblio.TypeDocument@49076d00 (toString() == null)
+       biblio.TypeDocument@f6f7abd (toString() == null)
 
 junit.framework.AssertionFailedError: Assertion failed: 
 
 assert typeDocument.save() != null
        |            |      |
        |            null   false
-       biblio.TypeDocument@49076d00 (toString() == null)
+       biblio.TypeDocument@f6f7abd (toString() == null)
 
 	at biblio.TypeDocumentControllerTests.testShow(TypeDocumentControllerTests.groovy:62)
 
-Testcase: testEdit took 0,054 sec
+Testcase: testEdit took 0,049 sec
 	FAILED
 Assertion failed: 
 
 assert typeDocument.save() != null
        |            |      |
        |            null   false
-       biblio.TypeDocument@22f544b (toString() == null)
+       biblio.TypeDocument@67b1a578 (toString() == null)
 
 junit.framework.AssertionFailedError: Assertion failed: 
 
 assert typeDocument.save() != null
        |            |      |
        |            null   false
-       biblio.TypeDocument@22f544b (toString() == null)
+       biblio.TypeDocument@67b1a578 (toString() == null)
 
 	at biblio.TypeDocumentControllerTests.testEdit(TypeDocumentControllerTests.groovy:80)
 
-Testcase: testCreate took 0,046 sec
+Testcase: testCreate took 0,051 sec

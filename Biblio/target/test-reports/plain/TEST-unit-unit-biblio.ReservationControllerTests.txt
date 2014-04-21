@@ -1,5 +1,5 @@
 Testsuite: biblio.ReservationControllerTests
-Tests run: 8, Failures: 5, Errors: 0, Time elapsed: 0,913 sec
+Tests run: 8, Failures: 5, Errors: 0, Time elapsed: 0,92 sec
 ------------- Standard Output ---------------
 --Output from testList--
 --Output from testSave--
@@ -21,96 +21,96 @@ Tests run: 8, Failures: 5, Errors: 0, Time elapsed: 0,913 sec
 --Output from testCreate--
 ------------- ---------------- ---------------
 
-Testcase: testList took 0,287 sec
-Testcase: testSave took 0,066 sec
+Testcase: testList took 0,245 sec
+Testcase: testSave took 0,072 sec
 	FAILED
 Assertion failed: 
 
 assert response.redirectedUrl == '/reservation/show/1'
        |        |             |
        |        null          false
-       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@7e6a60a
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@64121bd
 
 junit.framework.AssertionFailedError: Assertion failed: 
 
 assert response.redirectedUrl == '/reservation/show/1'
        |        |             |
        |        null          false
-       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@7e6a60a
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@64121bd
 
 	at biblio.ReservationControllerTests.testSave(ReservationControllerTests.groovy:48)
 
-Testcase: testDelete took 0,116 sec
+Testcase: testDelete took 0,091 sec
 	FAILED
 Assertion failed: 
 
 assert reservation.save() != null
        |           |      |
        |           null   false
-       biblio.Reservation@882ae42 (toString() == null)
+       biblio.Reservation@703c4693 (toString() == null)
 
 junit.framework.AssertionFailedError: Assertion failed: 
 
 assert reservation.save() != null
        |           |      |
        |           null   false
-       biblio.Reservation@882ae42 (toString() == null)
+       biblio.Reservation@703c4693 (toString() == null)
 
 	at biblio.ReservationControllerTests.testDelete(ReservationControllerTests.groovy:144)
 
-Testcase: testUpdate took 0,075 sec
+Testcase: testUpdate took 0,059 sec
 	FAILED
 Assertion failed: 
 
 assert reservation.save() != null
        |           |      |
        |           null   false
-       biblio.Reservation@188651b8 (toString() == null)
+       biblio.Reservation@4d6456d (toString() == null)
 
 junit.framework.AssertionFailedError: Assertion failed: 
 
 assert reservation.save() != null
        |           |      |
        |           null   false
-       biblio.Reservation@188651b8 (toString() == null)
+       biblio.Reservation@4d6456d (toString() == null)
 
 	at biblio.ReservationControllerTests.testUpdate(ReservationControllerTests.groovy:100)
 
-Testcase: testIndex took 0,083 sec
-Testcase: testShow took 0,062 sec
+Testcase: testIndex took 0,059 sec
+Testcase: testShow took 0,047 sec
 	FAILED
 Assertion failed: 
 
 assert reservation.save() != null
        |           |      |
        |           null   false
-       biblio.Reservation@64693063 (toString() == null)
+       biblio.Reservation@4e260179 (toString() == null)
 
 junit.framework.AssertionFailedError: Assertion failed: 
 
 assert reservation.save() != null
        |           |      |
        |           null   false
-       biblio.Reservation@64693063 (toString() == null)
+       biblio.Reservation@4e260179 (toString() == null)
 
 	at biblio.ReservationControllerTests.testShow(ReservationControllerTests.groovy:62)
 
-Testcase: testEdit took 0,082 sec
+Testcase: testEdit took 0,14 sec
 	FAILED
 Assertion failed: 
 
 assert reservation.save() != null
        |           |      |
        |           null   false
-       biblio.Reservation@7fc415f3 (toString() == null)
+       biblio.Reservation@345d3a37 (toString() == null)
 
 junit.framework.AssertionFailedError: Assertion failed: 
 
 assert reservation.save() != null
        |           |      |
        |           null   false
-       biblio.Reservation@7fc415f3 (toString() == null)
+       biblio.Reservation@345d3a37 (toString() == null)
 
 	at biblio.ReservationControllerTests.testEdit(ReservationControllerTests.groovy:80)
 
-Testcase: testCreate took 0,046 sec
+Testcase: testCreate took 0,079 sec

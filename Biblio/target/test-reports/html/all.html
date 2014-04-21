@@ -15,11 +15,11 @@
      - All tests </h1>
 <p class="intro">
                         Executed
-                        43
+                        55
                         tests
                     
                         with
-                        23 failures
+                        21 failures
                         .
                     </p>
 </div>
@@ -61,7 +61,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">testList</b>
 </p>
-<p class="summary">Executed in 0.253 seconds.</p>
+<p class="summary">Executed in 0.494 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -71,7 +71,7 @@
 <p>
 <span class="icon failure"></span><b class="testname message failure">testSave</b>
 </p>
-<p class="summary">Executed in 0.087 seconds.</p>
+<p class="summary">Executed in 0.124 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
@@ -81,7 +81,7 @@
 assert response.redirectedUrl == '/auteur/show/1'
        |        |             |
        |        null          false
-       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@caa4a34
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@59d8994
 </b>
 </p>
 <pre>junit.framework.AssertionFailedError: Assertion failed: 
@@ -89,7 +89,7 @@ assert response.redirectedUrl == '/auteur/show/1'
 assert response.redirectedUrl == '/auteur/show/1'
        |        |             |
        |        null          false
-       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@caa4a34
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@59d8994
 
 	at biblio.AuteurControllerTests.testSave(AuteurControllerTests.groovy:48)
 </pre>
@@ -102,7 +102,7 @@ assert response.redirectedUrl == '/auteur/show/1'
 <p>
 <span class="icon failure"></span><b class="testname message failure">testDelete</b>
 </p>
-<p class="summary">Executed in 0.117 seconds.</p>
+<p class="summary">Executed in 0.152 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
@@ -133,7 +133,7 @@ assert auteur.save() != null
 <p>
 <span class="icon failure"></span><b class="testname message failure">testUpdate</b>
 </p>
-<p class="summary">Executed in 0.09 seconds.</p>
+<p class="summary">Executed in 0.08 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
@@ -164,7 +164,7 @@ assert auteur.save() != null
 <p>
 <span class="icon success"></span><b class="testname message success">testIndex</b>
 </p>
-<p class="summary">Executed in 0.08 seconds.</p>
+<p class="summary">Executed in 0.076 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -205,7 +205,7 @@ assert auteur.save() != null
 <p>
 <span class="icon failure"></span><b class="testname message failure">testEdit</b>
 </p>
-<p class="summary">Executed in 0.06 seconds.</p>
+<p class="summary">Executed in 0.073 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
@@ -236,7 +236,7 @@ assert auteur.save() != null
 <p>
 <span class="icon success"></span><b class="testname message success">testCreate</b>
 </p>
-<p class="summary">Executed in 0.062 seconds.</p>
+<p class="summary">Executed in 0.067 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -287,7 +287,7 @@ assert auteur.save() != null
 <p>
 <span class="icon success"></span><b class="testname message success">testList</b>
 </p>
-<p class="summary">Executed in 0.27 seconds.</p>
+<p class="summary">Executed in 0.276 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -297,7 +297,7 @@ assert auteur.save() != null
 <p>
 <span class="icon failure"></span><b class="testname message failure">testSave</b>
 </p>
-<p class="summary">Executed in 0.128 seconds.</p>
+<p class="summary">Executed in 0.085 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
@@ -307,7 +307,7 @@ assert auteur.save() != null
 assert response.redirectedUrl == '/livre/show/1'
        |        |             |
        |        null          false
-       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@73b57a52
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@5cfa9784
 </b>
 </p>
 <pre>junit.framework.AssertionFailedError: Assertion failed: 
@@ -315,7 +315,7 @@ assert response.redirectedUrl == '/livre/show/1'
 assert response.redirectedUrl == '/livre/show/1'
        |        |             |
        |        null          false
-       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@73b57a52
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@5cfa9784
 
 	at biblio.LivreControllerTests.testSave(LivreControllerTests.groovy:48)
 </pre>
@@ -328,7 +328,7 @@ assert response.redirectedUrl == '/livre/show/1'
 <p>
 <span class="icon failure"></span><b class="testname message failure">testDelete</b>
 </p>
-<p class="summary">Executed in 0.13 seconds.</p>
+<p class="summary">Executed in 0.14 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
@@ -338,7 +338,7 @@ assert response.redirectedUrl == '/livre/show/1'
 assert livre.save() != null
        |     |      |
        |     null   false
-       biblio.Livre@6eb89654 (toString() == null)
+       biblio.Livre@682268dd (toString() == null)
 </b>
 </p>
 <pre>junit.framework.AssertionFailedError: Assertion failed: 
@@ -346,7 +346,7 @@ assert livre.save() != null
 assert livre.save() != null
        |     |      |
        |     null   false
-       biblio.Livre@6eb89654 (toString() == null)
+       biblio.Livre@682268dd (toString() == null)
 
 	at biblio.LivreControllerTests.testDelete(LivreControllerTests.groovy:144)
 </pre>
@@ -359,7 +359,7 @@ assert livre.save() != null
 <p>
 <span class="icon failure"></span><b class="testname message failure">testUpdate</b>
 </p>
-<p class="summary">Executed in 0.058 seconds.</p>
+<p class="summary">Executed in 0.054 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
@@ -369,7 +369,7 @@ assert livre.save() != null
 assert livre.save() != null
        |     |      |
        |     null   false
-       biblio.Livre@4e6c5530 (toString() == null)
+       biblio.Livre@749faca4 (toString() == null)
 </b>
 </p>
 <pre>junit.framework.AssertionFailedError: Assertion failed: 
@@ -377,7 +377,7 @@ assert livre.save() != null
 assert livre.save() != null
        |     |      |
        |     null   false
-       biblio.Livre@4e6c5530 (toString() == null)
+       biblio.Livre@749faca4 (toString() == null)
 
 	at biblio.LivreControllerTests.testUpdate(LivreControllerTests.groovy:100)
 </pre>
@@ -390,7 +390,7 @@ assert livre.save() != null
 <p>
 <span class="icon success"></span><b class="testname message success">testIndex</b>
 </p>
-<p class="summary">Executed in 0.061 seconds.</p>
+<p class="summary">Executed in 0.046 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -400,7 +400,7 @@ assert livre.save() != null
 <p>
 <span class="icon failure"></span><b class="testname message failure">testShow</b>
 </p>
-<p class="summary">Executed in 0.083 seconds.</p>
+<p class="summary">Executed in 0.048 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
@@ -410,7 +410,7 @@ assert livre.save() != null
 assert livre.save() != null
        |     |      |
        |     null   false
-       biblio.Livre@51a9e7fc (toString() == null)
+       biblio.Livre@1913d60 (toString() == null)
 </b>
 </p>
 <pre>junit.framework.AssertionFailedError: Assertion failed: 
@@ -418,7 +418,7 @@ assert livre.save() != null
 assert livre.save() != null
        |     |      |
        |     null   false
-       biblio.Livre@51a9e7fc (toString() == null)
+       biblio.Livre@1913d60 (toString() == null)
 
 	at biblio.LivreControllerTests.testShow(LivreControllerTests.groovy:62)
 </pre>
@@ -431,7 +431,7 @@ assert livre.save() != null
 <p>
 <span class="icon failure"></span><b class="testname message failure">testEdit</b>
 </p>
-<p class="summary">Executed in 0.056 seconds.</p>
+<p class="summary">Executed in 0.051 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
@@ -441,7 +441,7 @@ assert livre.save() != null
 assert livre.save() != null
        |     |      |
        |     null   false
-       biblio.Livre@6d94d958 (toString() == null)
+       biblio.Livre@3d8a5c02 (toString() == null)
 </b>
 </p>
 <pre>junit.framework.AssertionFailedError: Assertion failed: 
@@ -449,7 +449,7 @@ assert livre.save() != null
 assert livre.save() != null
        |     |      |
        |     null   false
-       biblio.Livre@6d94d958 (toString() == null)
+       biblio.Livre@3d8a5c02 (toString() == null)
 
 	at biblio.LivreControllerTests.testEdit(LivreControllerTests.groovy:80)
 </pre>
@@ -462,7 +462,7 @@ assert livre.save() != null
 <p>
 <span class="icon success"></span><b class="testname message success">testCreate</b>
 </p>
-<p class="summary">Executed in 0.058 seconds.</p>
+<p class="summary">Executed in 0.071 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -513,7 +513,7 @@ assert livre.save() != null
 <p>
 <span class="icon success"></span><b class="testname message success">testList</b>
 </p>
-<p class="summary">Executed in 0.287 seconds.</p>
+<p class="summary">Executed in 0.245 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -523,7 +523,7 @@ assert livre.save() != null
 <p>
 <span class="icon failure"></span><b class="testname message failure">testSave</b>
 </p>
-<p class="summary">Executed in 0.066 seconds.</p>
+<p class="summary">Executed in 0.072 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
@@ -533,7 +533,7 @@ assert livre.save() != null
 assert response.redirectedUrl == '/reservation/show/1'
        |        |             |
        |        null          false
-       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@7e6a60a
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@64121bd
 </b>
 </p>
 <pre>junit.framework.AssertionFailedError: Assertion failed: 
@@ -541,7 +541,7 @@ assert response.redirectedUrl == '/reservation/show/1'
 assert response.redirectedUrl == '/reservation/show/1'
        |        |             |
        |        null          false
-       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@7e6a60a
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@64121bd
 
 	at biblio.ReservationControllerTests.testSave(ReservationControllerTests.groovy:48)
 </pre>
@@ -554,7 +554,7 @@ assert response.redirectedUrl == '/reservation/show/1'
 <p>
 <span class="icon failure"></span><b class="testname message failure">testDelete</b>
 </p>
-<p class="summary">Executed in 0.116 seconds.</p>
+<p class="summary">Executed in 0.091 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
@@ -564,7 +564,7 @@ assert response.redirectedUrl == '/reservation/show/1'
 assert reservation.save() != null
        |           |      |
        |           null   false
-       biblio.Reservation@882ae42 (toString() == null)
+       biblio.Reservation@703c4693 (toString() == null)
 </b>
 </p>
 <pre>junit.framework.AssertionFailedError: Assertion failed: 
@@ -572,7 +572,7 @@ assert reservation.save() != null
 assert reservation.save() != null
        |           |      |
        |           null   false
-       biblio.Reservation@882ae42 (toString() == null)
+       biblio.Reservation@703c4693 (toString() == null)
 
 	at biblio.ReservationControllerTests.testDelete(ReservationControllerTests.groovy:144)
 </pre>
@@ -585,7 +585,7 @@ assert reservation.save() != null
 <p>
 <span class="icon failure"></span><b class="testname message failure">testUpdate</b>
 </p>
-<p class="summary">Executed in 0.075 seconds.</p>
+<p class="summary">Executed in 0.059 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
@@ -595,7 +595,7 @@ assert reservation.save() != null
 assert reservation.save() != null
        |           |      |
        |           null   false
-       biblio.Reservation@188651b8 (toString() == null)
+       biblio.Reservation@4d6456d (toString() == null)
 </b>
 </p>
 <pre>junit.framework.AssertionFailedError: Assertion failed: 
@@ -603,7 +603,7 @@ assert reservation.save() != null
 assert reservation.save() != null
        |           |      |
        |           null   false
-       biblio.Reservation@188651b8 (toString() == null)
+       biblio.Reservation@4d6456d (toString() == null)
 
 	at biblio.ReservationControllerTests.testUpdate(ReservationControllerTests.groovy:100)
 </pre>
@@ -616,7 +616,7 @@ assert reservation.save() != null
 <p>
 <span class="icon success"></span><b class="testname message success">testIndex</b>
 </p>
-<p class="summary">Executed in 0.083 seconds.</p>
+<p class="summary">Executed in 0.059 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -626,7 +626,7 @@ assert reservation.save() != null
 <p>
 <span class="icon failure"></span><b class="testname message failure">testShow</b>
 </p>
-<p class="summary">Executed in 0.062 seconds.</p>
+<p class="summary">Executed in 0.047 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
@@ -636,7 +636,7 @@ assert reservation.save() != null
 assert reservation.save() != null
        |           |      |
        |           null   false
-       biblio.Reservation@64693063 (toString() == null)
+       biblio.Reservation@4e260179 (toString() == null)
 </b>
 </p>
 <pre>junit.framework.AssertionFailedError: Assertion failed: 
@@ -644,7 +644,7 @@ assert reservation.save() != null
 assert reservation.save() != null
        |           |      |
        |           null   false
-       biblio.Reservation@64693063 (toString() == null)
+       biblio.Reservation@4e260179 (toString() == null)
 
 	at biblio.ReservationControllerTests.testShow(ReservationControllerTests.groovy:62)
 </pre>
@@ -657,7 +657,7 @@ assert reservation.save() != null
 <p>
 <span class="icon failure"></span><b class="testname message failure">testEdit</b>
 </p>
-<p class="summary">Executed in 0.082 seconds.</p>
+<p class="summary">Executed in 0.141 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
@@ -667,7 +667,7 @@ assert reservation.save() != null
 assert reservation.save() != null
        |           |      |
        |           null   false
-       biblio.Reservation@7fc415f3 (toString() == null)
+       biblio.Reservation@345d3a37 (toString() == null)
 </b>
 </p>
 <pre>junit.framework.AssertionFailedError: Assertion failed: 
@@ -675,7 +675,7 @@ assert reservation.save() != null
 assert reservation.save() != null
        |           |      |
        |           null   false
-       biblio.Reservation@7fc415f3 (toString() == null)
+       biblio.Reservation@345d3a37 (toString() == null)
 
 	at biblio.ReservationControllerTests.testEdit(ReservationControllerTests.groovy:80)
 </pre>
@@ -688,7 +688,7 @@ assert reservation.save() != null
 <p>
 <span class="icon success"></span><b class="testname message success">testCreate</b>
 </p>
-<p class="summary">Executed in 0.046 seconds.</p>
+<p class="summary">Executed in 0.079 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -739,7 +739,7 @@ assert reservation.save() != null
 <p>
 <span class="icon success"></span><b class="testname message success">testList</b>
 </p>
-<p class="summary">Executed in 0.293 seconds.</p>
+<p class="summary">Executed in 0.324 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -749,7 +749,7 @@ assert reservation.save() != null
 <p>
 <span class="icon failure"></span><b class="testname message failure">testSave</b>
 </p>
-<p class="summary">Executed in 0.077 seconds.</p>
+<p class="summary">Executed in 0.069 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
@@ -759,7 +759,7 @@ assert reservation.save() != null
 assert response.redirectedUrl == '/typeDocument/show/1'
        |        |             |
        |        null          false
-       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@2ccfb3a9
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@3077da0e
 </b>
 </p>
 <pre>junit.framework.AssertionFailedError: Assertion failed: 
@@ -767,7 +767,7 @@ assert response.redirectedUrl == '/typeDocument/show/1'
 assert response.redirectedUrl == '/typeDocument/show/1'
        |        |             |
        |        null          false
-       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@2ccfb3a9
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@3077da0e
 
 	at biblio.TypeDocumentControllerTests.testSave(TypeDocumentControllerTests.groovy:48)
 </pre>
@@ -780,7 +780,7 @@ assert response.redirectedUrl == '/typeDocument/show/1'
 <p>
 <span class="icon failure"></span><b class="testname message failure">testDelete</b>
 </p>
-<p class="summary">Executed in 0.11 seconds.</p>
+<p class="summary">Executed in 0.135 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
@@ -790,7 +790,7 @@ assert response.redirectedUrl == '/typeDocument/show/1'
 assert typeDocument.save() != null
        |            |      |
        |            null   false
-       biblio.TypeDocument@783b0bce (toString() == null)
+       biblio.TypeDocument@7a84a043 (toString() == null)
 </b>
 </p>
 <pre>junit.framework.AssertionFailedError: Assertion failed: 
@@ -798,7 +798,7 @@ assert typeDocument.save() != null
 assert typeDocument.save() != null
        |            |      |
        |            null   false
-       biblio.TypeDocument@783b0bce (toString() == null)
+       biblio.TypeDocument@7a84a043 (toString() == null)
 
 	at biblio.TypeDocumentControllerTests.testDelete(TypeDocumentControllerTests.groovy:144)
 </pre>
@@ -811,7 +811,7 @@ assert typeDocument.save() != null
 <p>
 <span class="icon failure"></span><b class="testname message failure">testUpdate</b>
 </p>
-<p class="summary">Executed in 0.062 seconds.</p>
+<p class="summary">Executed in 0.051 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
@@ -821,7 +821,7 @@ assert typeDocument.save() != null
 assert typeDocument.save() != null
        |            |      |
        |            null   false
-       biblio.TypeDocument@4ee88081 (toString() == null)
+       biblio.TypeDocument@253ce24c (toString() == null)
 </b>
 </p>
 <pre>junit.framework.AssertionFailedError: Assertion failed: 
@@ -829,7 +829,7 @@ assert typeDocument.save() != null
 assert typeDocument.save() != null
        |            |      |
        |            null   false
-       biblio.TypeDocument@4ee88081 (toString() == null)
+       biblio.TypeDocument@253ce24c (toString() == null)
 
 	at biblio.TypeDocumentControllerTests.testUpdate(TypeDocumentControllerTests.groovy:100)
 </pre>
@@ -842,7 +842,7 @@ assert typeDocument.save() != null
 <p>
 <span class="icon success"></span><b class="testname message success">testIndex</b>
 </p>
-<p class="summary">Executed in 0.053 seconds.</p>
+<p class="summary">Executed in 0.046 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -862,7 +862,7 @@ assert typeDocument.save() != null
 assert typeDocument.save() != null
        |            |      |
        |            null   false
-       biblio.TypeDocument@49076d00 (toString() == null)
+       biblio.TypeDocument@f6f7abd (toString() == null)
 </b>
 </p>
 <pre>junit.framework.AssertionFailedError: Assertion failed: 
@@ -870,7 +870,7 @@ assert typeDocument.save() != null
 assert typeDocument.save() != null
        |            |      |
        |            null   false
-       biblio.TypeDocument@49076d00 (toString() == null)
+       biblio.TypeDocument@f6f7abd (toString() == null)
 
 	at biblio.TypeDocumentControllerTests.testShow(TypeDocumentControllerTests.groovy:62)
 </pre>
@@ -883,7 +883,7 @@ assert typeDocument.save() != null
 <p>
 <span class="icon failure"></span><b class="testname message failure">testEdit</b>
 </p>
-<p class="summary">Executed in 0.055 seconds.</p>
+<p class="summary">Executed in 0.049 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
@@ -893,7 +893,7 @@ assert typeDocument.save() != null
 assert typeDocument.save() != null
        |            |      |
        |            null   false
-       biblio.TypeDocument@22f544b (toString() == null)
+       biblio.TypeDocument@67b1a578 (toString() == null)
 </b>
 </p>
 <pre>junit.framework.AssertionFailedError: Assertion failed: 
@@ -901,7 +901,7 @@ assert typeDocument.save() != null
 assert typeDocument.save() != null
        |            |      |
        |            null   false
-       biblio.TypeDocument@22f544b (toString() == null)
+       biblio.TypeDocument@67b1a578 (toString() == null)
 
 	at biblio.TypeDocumentControllerTests.testEdit(TypeDocumentControllerTests.groovy:80)
 </pre>
@@ -914,7 +914,7 @@ assert typeDocument.save() != null
 <p>
 <span class="icon success"></span><b class="testname message success">testCreate</b>
 </p>
-<p class="summary">Executed in 0.046 seconds.</p>
+<p class="summary">Executed in 0.051 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -963,7 +963,7 @@ assert typeDocument.save() != null
 <p>
 <span class="icon failure"></span><b class="testname message failure">testSomething</b>
 </p>
-<p class="summary">Executed in 0.021 seconds.</p>
+<p class="summary">Executed in 0.02 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
@@ -972,94 +972,6 @@ assert typeDocument.save() != null
 </p>
 <pre>junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
 	at biblio.AddDaysServiceTests.testSomething(AddDaysServiceTests.groovy:15)
-</pre>
-</div>
-</div>
-<div class="clear"></div>
-</div>
-<div class="clearfix output footer">
-<div class="sysout">
-<h2>Standard output</h2>
-<pre class="stdout">--Output from testSomething--
-</pre>
-</div>
-<div class="syserr">
-<h2>System error</h2>
-<pre class="syserr">--Output from testSomething--
-</pre>
-</div>
-</div>
-<div class="clear"></div>
-</div>
-<div class="testsuite failure">
-<div class="header">
-<h2>LivreTests</h2>
-<h3>
-                        A single test executed
-                    
-                        with
-                        one failure
-                        .
-                    </h3>
-</div>
-<div class="testcase clearfix failure grid_8 alpha omega" data-name="testSomething">
-<div class="grid_3 alpha">
-<p>
-<span class="icon failure"></span><b class="testname message failure">testSomething</b>
-</p>
-<p class="summary">Executed in 0.095 seconds.</p>
-</div>
-<div class="grid_5 omega outputinfo">
-<div class="details">
-<p>
-<b class="message">junit.framework.AssertionFailedError: Implement me</b>
-</p>
-<pre>junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
-	at biblio.LivreTests.testSomething(LivreTests.groovy:15)
-</pre>
-</div>
-</div>
-<div class="clear"></div>
-</div>
-<div class="clearfix output footer">
-<div class="sysout">
-<h2>Standard output</h2>
-<pre class="stdout">--Output from testSomething--
-</pre>
-</div>
-<div class="syserr">
-<h2>System error</h2>
-<pre class="syserr">--Output from testSomething--
-</pre>
-</div>
-</div>
-<div class="clear"></div>
-</div>
-<div class="testsuite failure">
-<div class="header">
-<h2>ReservationTests</h2>
-<h3>
-                        A single test executed
-                    
-                        with
-                        one failure
-                        .
-                    </h3>
-</div>
-<div class="testcase clearfix failure grid_8 alpha omega" data-name="testSomething">
-<div class="grid_3 alpha">
-<p>
-<span class="icon failure"></span><b class="testname message failure">testSomething</b>
-</p>
-<p class="summary">Executed in 0.066 seconds.</p>
-</div>
-<div class="grid_5 omega outputinfo">
-<div class="details">
-<p>
-<b class="message">junit.framework.AssertionFailedError: Implement me</b>
-</p>
-<pre>junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
-	at biblio.ReservationTests.testSomething(ReservationTests.groovy:15)
 </pre>
 </div>
 </div>
@@ -1095,7 +1007,7 @@ assert typeDocument.save() != null
 <p>
 <span class="icon success"></span><b class="testname message success">testConstraintNomBlank</b>
 </p>
-<p class="summary">Executed in 0.065 seconds.</p>
+<p class="summary">Executed in 0.06 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1105,7 +1017,7 @@ assert typeDocument.save() != null
 <p>
 <span class="icon success"></span><b class="testname message success">testConstraintPrenomBlank</b>
 </p>
-<p class="summary">Executed in 0.014 seconds.</p>
+<p class="summary">Executed in 0.01 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1115,7 +1027,7 @@ assert typeDocument.save() != null
 <p>
 <span class="icon success"></span><b class="testname message success">testConstraintPrenomNull</b>
 </p>
-<p class="summary">Executed in 0.011 seconds.</p>
+<p class="summary">Executed in 0.01 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1125,7 +1037,7 @@ assert typeDocument.save() != null
 <p>
 <span class="icon success"></span><b class="testname message success">testConstraintsValidees</b>
 </p>
-<p class="summary">Executed in 0.011 seconds.</p>
+<p class="summary">Executed in 0.009 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1135,7 +1047,7 @@ assert typeDocument.save() != null
 <p>
 <span class="icon success"></span><b class="testname message success">testConstraintNomNull</b>
 </p>
-<p class="summary">Executed in 0.014 seconds.</p>
+<p class="summary">Executed in 0.009 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1145,7 +1057,7 @@ assert typeDocument.save() != null
 <p>
 <span class="icon success"></span><b class="testname message success">testToString</b>
 </p>
-<p class="summary">Executed in 0.009 seconds.</p>
+<p class="summary">Executed in 0.011 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1155,7 +1067,7 @@ assert typeDocument.save() != null
 <p>
 <span class="icon success"></span><b class="testname message success">testConstraintNomBlankPrenomBlanck</b>
 </p>
-<p class="summary">Executed in 0.01 seconds.</p>
+<p class="summary">Executed in 0.012 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1165,7 +1077,7 @@ assert typeDocument.save() != null
 <p>
 <span class="icon success"></span><b class="testname message success">testConstraintNomNullPrenomNull</b>
 </p>
-<p class="summary">Executed in 0.009 seconds.</p>
+<p class="summary">Executed in 0.011 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1193,6 +1105,243 @@ assert typeDocument.save() != null
 --Output from testToString--
 --Output from testConstraintNomBlankPrenomBlanck--
 --Output from testConstraintNomNullPrenomNull--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>LivreTests</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testConstraintNombreExemplairesMinValue">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testConstraintNombreExemplairesMinValue</b>
+</p>
+<p class="summary">Executed in 0.121 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testConstraintTypeDocumentNull">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testConstraintTypeDocumentNull</b>
+</p>
+<p class="summary">Executed in 0.01 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testConstraintNombreExemplairesDisponiblesMinValue">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testConstraintNombreExemplairesDisponiblesMinValue</b>
+</p>
+<p class="summary">Executed in 0.012 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testConstraintsValidees">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testConstraintsValidees</b>
+</p>
+<p class="summary">Executed in 0.013 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testConstraintTitreNull">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testConstraintTitreNull</b>
+</p>
+<p class="summary">Executed in 0.015 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testConstraintTitreNullNombreExemplairesNullNombreExemplairesDisponiblesNull">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testConstraintTitreNullNombreExemplairesNullNombreExemplairesDisponiblesNull</b>
+</p>
+<p class="summary">Executed in 0.012 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testToString">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testToString</b>
+</p>
+<p class="summary">Executed in 0.014 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testConstraintNombreExemplairesMinValue--
+--Output from testConstraintTypeDocumentNull--
+--Output from testConstraintNombreExemplairesDisponiblesMinValue--
+--Output from testConstraintsValidees--
+--Output from testConstraintTitreNull--
+--Output from testConstraintTitreNullNombreExemplairesNullNombreExemplairesDisponiblesNull--
+--Output from testToString--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testConstraintNombreExemplairesMinValue--
+--Output from testConstraintTypeDocumentNull--
+--Output from testConstraintNombreExemplairesDisponiblesMinValue--
+--Output from testConstraintsValidees--
+--Output from testConstraintTitreNull--
+--Output from testConstraintTitreNullNombreExemplairesNullNombreExemplairesDisponiblesNull--
+--Output from testToString--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>ReservationTests</h2>
+<h3>
+                        Executed
+                        3
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testConstraintsValidees">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testConstraintsValidees</b>
+</p>
+<p class="summary">Executed in 0.089 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testConstraintCodeNull">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testConstraintCodeNull</b>
+</p>
+<p class="summary">Executed in 0.013 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testToString">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testToString</b>
+</p>
+<p class="summary">Executed in 0.014 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testConstraintsValidees--
+--Output from testConstraintCodeNull--
+--Output from testToString--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testConstraintsValidees--
+--Output from testConstraintCodeNull--
+--Output from testToString--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>TypeDocumentTests</h2>
+<h3>
+                        Executed
+                        4
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testConstraintsValidees">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testConstraintsValidees</b>
+</p>
+<p class="summary">Executed in 0.066 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testConstraintIntituleNull">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testConstraintIntituleNull</b>
+</p>
+<p class="summary">Executed in 0.01 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testConstraintIntituleBlank">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testConstraintIntituleBlank</b>
+</p>
+<p class="summary">Executed in 0.007 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testToString">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testToString</b>
+</p>
+<p class="summary">Executed in 0.009 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testConstraintsValidees--
+--Output from testConstraintIntituleNull--
+--Output from testConstraintIntituleBlank--
+--Output from testToString--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testConstraintsValidees--
+--Output from testConstraintIntituleNull--
+--Output from testConstraintIntituleBlank--
+--Output from testToString--
 </pre>
 </div>
 </div>

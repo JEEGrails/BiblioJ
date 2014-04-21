@@ -1,0 +1,19 @@
+Testsuite: biblio.TypeDocumentTests
+Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0,095 sec
+------------- Standard Output ---------------
+--Output from testConstraintsValidees--
+--Output from testConstraintIntituleNull--
+--Output from testConstraintIntituleBlank--
+--Output from testToString--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testConstraintsValidees--
+--Output from testConstraintIntituleNull--
+--Output from testConstraintIntituleBlank--
+--Output from testToString--
+------------- ---------------- ---------------
+
+Testcase: testConstraintsValidees took 0,066 sec
+Testcase: testConstraintIntituleNull took 0,01 sec
+Testcase: testConstraintIntituleBlank took 0,007 sec
+Testcase: testToString took 0,009 sec

@@ -1,64 +1,64 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="5" hostname="Elmahdi-pc" name="biblio.TypeDocumentControllerTests" tests="8" time="0.769" timestamp="2014-04-21T01:46:51">
+<testsuite errors="0" failures="5" hostname="Elmahdi-pc" name="biblio.TypeDocumentControllerTests" tests="8" time="0.88" timestamp="2014-04-21T02:07:44">
   <properties />
-  <testcase classname="biblio.TypeDocumentControllerTests" name="testList" time="0.293" />
-  <testcase classname="biblio.TypeDocumentControllerTests" name="testSave" time="0.077">
-    <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/typeDocument/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@2ccfb3a9&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+  <testcase classname="biblio.TypeDocumentControllerTests" name="testList" time="0.324" />
+  <testcase classname="biblio.TypeDocumentControllerTests" name="testSave" time="0.069">
+    <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/typeDocument/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@3077da0e&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
 
 assert response.redirectedUrl == &apos;/typeDocument/show/1&apos;
        |        |             |
        |        null          false
-       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@2ccfb3a9
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@3077da0e
 
 	at biblio.TypeDocumentControllerTests.testSave(TypeDocumentControllerTests.groovy:48)
 </failure>
   </testcase>
-  <testcase classname="biblio.TypeDocumentControllerTests" name="testDelete" time="0.11">
-    <failure message="Assertion failed: &#xa;&#xa;assert typeDocument.save() != null&#xa;       |            |      |&#xa;       |            null   false&#xa;       biblio.TypeDocument@783b0bce (toString() == null)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+  <testcase classname="biblio.TypeDocumentControllerTests" name="testDelete" time="0.135">
+    <failure message="Assertion failed: &#xa;&#xa;assert typeDocument.save() != null&#xa;       |            |      |&#xa;       |            null   false&#xa;       biblio.TypeDocument@7a84a043 (toString() == null)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
 
 assert typeDocument.save() != null
        |            |      |
        |            null   false
-       biblio.TypeDocument@783b0bce (toString() == null)
+       biblio.TypeDocument@7a84a043 (toString() == null)
 
 	at biblio.TypeDocumentControllerTests.testDelete(TypeDocumentControllerTests.groovy:144)
 </failure>
   </testcase>
-  <testcase classname="biblio.TypeDocumentControllerTests" name="testUpdate" time="0.062">
-    <failure message="Assertion failed: &#xa;&#xa;assert typeDocument.save() != null&#xa;       |            |      |&#xa;       |            null   false&#xa;       biblio.TypeDocument@4ee88081 (toString() == null)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+  <testcase classname="biblio.TypeDocumentControllerTests" name="testUpdate" time="0.051">
+    <failure message="Assertion failed: &#xa;&#xa;assert typeDocument.save() != null&#xa;       |            |      |&#xa;       |            null   false&#xa;       biblio.TypeDocument@253ce24c (toString() == null)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
 
 assert typeDocument.save() != null
        |            |      |
        |            null   false
-       biblio.TypeDocument@4ee88081 (toString() == null)
+       biblio.TypeDocument@253ce24c (toString() == null)
 
 	at biblio.TypeDocumentControllerTests.testUpdate(TypeDocumentControllerTests.groovy:100)
 </failure>
   </testcase>
-  <testcase classname="biblio.TypeDocumentControllerTests" name="testIndex" time="0.053" />
+  <testcase classname="biblio.TypeDocumentControllerTests" name="testIndex" time="0.046" />
   <testcase classname="biblio.TypeDocumentControllerTests" name="testShow" time="0.055">
-    <failure message="Assertion failed: &#xa;&#xa;assert typeDocument.save() != null&#xa;       |            |      |&#xa;       |            null   false&#xa;       biblio.TypeDocument@49076d00 (toString() == null)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+    <failure message="Assertion failed: &#xa;&#xa;assert typeDocument.save() != null&#xa;       |            |      |&#xa;       |            null   false&#xa;       biblio.TypeDocument@f6f7abd (toString() == null)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
 
 assert typeDocument.save() != null
        |            |      |
        |            null   false
-       biblio.TypeDocument@49076d00 (toString() == null)
+       biblio.TypeDocument@f6f7abd (toString() == null)
 
 	at biblio.TypeDocumentControllerTests.testShow(TypeDocumentControllerTests.groovy:62)
 </failure>
   </testcase>
-  <testcase classname="biblio.TypeDocumentControllerTests" name="testEdit" time="0.055">
-    <failure message="Assertion failed: &#xa;&#xa;assert typeDocument.save() != null&#xa;       |            |      |&#xa;       |            null   false&#xa;       biblio.TypeDocument@22f544b (toString() == null)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+  <testcase classname="biblio.TypeDocumentControllerTests" name="testEdit" time="0.049">
+    <failure message="Assertion failed: &#xa;&#xa;assert typeDocument.save() != null&#xa;       |            |      |&#xa;       |            null   false&#xa;       biblio.TypeDocument@67b1a578 (toString() == null)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
 
 assert typeDocument.save() != null
        |            |      |
        |            null   false
-       biblio.TypeDocument@22f544b (toString() == null)
+       biblio.TypeDocument@67b1a578 (toString() == null)
 
 	at biblio.TypeDocumentControllerTests.testEdit(TypeDocumentControllerTests.groovy:80)
 </failure>
   </testcase>
-  <testcase classname="biblio.TypeDocumentControllerTests" name="testCreate" time="0.046" />
+  <testcase classname="biblio.TypeDocumentControllerTests" name="testCreate" time="0.051" />
   <system-out><![CDATA[--Output from testList--
 --Output from testSave--
 --Output from testDelete--

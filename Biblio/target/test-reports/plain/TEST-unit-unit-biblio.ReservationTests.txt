@@ -1,15 +1,16 @@
 Testsuite: biblio.ReservationTests
-Tests run: 1, Failures: 1, Errors: 0, Time elapsed: 0,211 sec
+Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0,331 sec
 ------------- Standard Output ---------------
---Output from testSomething--
+--Output from testConstraintsValidees--
+--Output from testConstraintCodeNull--
+--Output from testToString--
 ------------- ---------------- ---------------
 ------------- Standard Error -----------------
---Output from testSomething--
+--Output from testConstraintsValidees--
+--Output from testConstraintCodeNull--
+--Output from testToString--
 ------------- ---------------- ---------------
 
-Testcase: testSomething took 0,066 sec
-	FAILED
-junit.framework.AssertionFailedError: Implement me
-junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
-	at biblio.ReservationTests.testSomething(ReservationTests.groovy:15)
-
+Testcase: testConstraintsValidees took 0,089 sec
+Testcase: testConstraintCodeNull took 0,013 sec
+Testcase: testToString took 0,014 sec

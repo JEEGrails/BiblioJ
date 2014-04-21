@@ -1,15 +1,28 @@
 Testsuite: biblio.LivreTests
-Tests run: 1, Failures: 1, Errors: 0, Time elapsed: 0,234 sec
+Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0,404 sec
 ------------- Standard Output ---------------
---Output from testSomething--
+--Output from testConstraintNombreExemplairesMinValue--
+--Output from testConstraintTypeDocumentNull--
+--Output from testConstraintNombreExemplairesDisponiblesMinValue--
+--Output from testConstraintsValidees--
+--Output from testConstraintTitreNull--
+--Output from testConstraintTitreNullNombreExemplairesNullNombreExemplairesDisponiblesNull--
+--Output from testToString--
 ------------- ---------------- ---------------
 ------------- Standard Error -----------------
---Output from testSomething--
+--Output from testConstraintNombreExemplairesMinValue--
+--Output from testConstraintTypeDocumentNull--
+--Output from testConstraintNombreExemplairesDisponiblesMinValue--
+--Output from testConstraintsValidees--
+--Output from testConstraintTitreNull--
+--Output from testConstraintTitreNullNombreExemplairesNullNombreExemplairesDisponiblesNull--
+--Output from testToString--
 ------------- ---------------- ---------------
 
-Testcase: testSomething took 0,095 sec
-	FAILED
-junit.framework.AssertionFailedError: Implement me
-junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
-	at biblio.LivreTests.testSomething(LivreTests.groovy:15)
-
+Testcase: testConstraintNombreExemplairesMinValue took 0,121 sec
+Testcase: testConstraintTypeDocumentNull took 0,01 sec
+Testcase: testConstraintNombreExemplairesDisponiblesMinValue took 0,012 sec
+Testcase: testConstraintsValidees took 0,013 sec
+Testcase: testConstraintTitreNull took 0,015 sec
+Testcase: testConstraintTitreNullNombreExemplairesNullNombreExemplairesDisponiblesNull took 0,012 sec
+Testcase: testToString took 0,014 sec

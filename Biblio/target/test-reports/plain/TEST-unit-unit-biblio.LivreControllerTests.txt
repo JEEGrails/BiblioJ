@@ -1,5 +1,5 @@
 Testsuite: biblio.LivreControllerTests
-Tests run: 8, Failures: 5, Errors: 0, Time elapsed: 0,942 sec
+Tests run: 8, Failures: 5, Errors: 0, Time elapsed: 0,912 sec
 ------------- Standard Output ---------------
 --Output from testList--
 --Output from testSave--
@@ -21,96 +21,96 @@ Tests run: 8, Failures: 5, Errors: 0, Time elapsed: 0,942 sec
 --Output from testCreate--
 ------------- ---------------- ---------------
 
-Testcase: testList took 0,27 sec
-Testcase: testSave took 0,128 sec
+Testcase: testList took 0,276 sec
+Testcase: testSave took 0,085 sec
 	FAILED
 Assertion failed: 
 
 assert response.redirectedUrl == '/livre/show/1'
        |        |             |
        |        null          false
-       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@73b57a52
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@5cfa9784
 
 junit.framework.AssertionFailedError: Assertion failed: 
 
 assert response.redirectedUrl == '/livre/show/1'
        |        |             |
        |        null          false
-       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@73b57a52
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@5cfa9784
 
 	at biblio.LivreControllerTests.testSave(LivreControllerTests.groovy:48)
 
-Testcase: testDelete took 0,13 sec
+Testcase: testDelete took 0,14 sec
 	FAILED
 Assertion failed: 
 
 assert livre.save() != null
        |     |      |
        |     null   false
-       biblio.Livre@6eb89654 (toString() == null)
+       biblio.Livre@682268dd (toString() == null)
 
 junit.framework.AssertionFailedError: Assertion failed: 
 
 assert livre.save() != null
        |     |      |
        |     null   false
-       biblio.Livre@6eb89654 (toString() == null)
+       biblio.Livre@682268dd (toString() == null)
 
 	at biblio.LivreControllerTests.testDelete(LivreControllerTests.groovy:144)
 
-Testcase: testUpdate took 0,058 sec
+Testcase: testUpdate took 0,053 sec
 	FAILED
 Assertion failed: 
 
 assert livre.save() != null
        |     |      |
        |     null   false
-       biblio.Livre@4e6c5530 (toString() == null)
+       biblio.Livre@749faca4 (toString() == null)
 
 junit.framework.AssertionFailedError: Assertion failed: 
 
 assert livre.save() != null
        |     |      |
        |     null   false
-       biblio.Livre@4e6c5530 (toString() == null)
+       biblio.Livre@749faca4 (toString() == null)
 
 	at biblio.LivreControllerTests.testUpdate(LivreControllerTests.groovy:100)
 
-Testcase: testIndex took 0,061 sec
-Testcase: testShow took 0,082 sec
+Testcase: testIndex took 0,046 sec
+Testcase: testShow took 0,048 sec
 	FAILED
 Assertion failed: 
 
 assert livre.save() != null
        |     |      |
        |     null   false
-       biblio.Livre@51a9e7fc (toString() == null)
+       biblio.Livre@1913d60 (toString() == null)
 
 junit.framework.AssertionFailedError: Assertion failed: 
 
 assert livre.save() != null
        |     |      |
        |     null   false
-       biblio.Livre@51a9e7fc (toString() == null)
+       biblio.Livre@1913d60 (toString() == null)
 
 	at biblio.LivreControllerTests.testShow(LivreControllerTests.groovy:62)
 
-Testcase: testEdit took 0,056 sec
+Testcase: testEdit took 0,051 sec
 	FAILED
 Assertion failed: 
 
 assert livre.save() != null
        |     |      |
        |     null   false
-       biblio.Livre@6d94d958 (toString() == null)
+       biblio.Livre@3d8a5c02 (toString() == null)
 
 junit.framework.AssertionFailedError: Assertion failed: 
 
 assert livre.save() != null
        |     |      |
        |     null   false
-       biblio.Livre@6d94d958 (toString() == null)
+       biblio.Livre@3d8a5c02 (toString() == null)
 
 	at biblio.LivreControllerTests.testEdit(LivreControllerTests.groovy:80)
 
-Testcase: testCreate took 0,058 sec
+Testcase: testCreate took 0,071 sec

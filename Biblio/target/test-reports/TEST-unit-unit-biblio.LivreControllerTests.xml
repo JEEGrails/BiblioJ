@@ -1,64 +1,64 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="5" hostname="Elmahdi-pc" name="biblio.LivreControllerTests" tests="8" time="0.942" timestamp="2014-04-21T01:46:48">
+<testsuite errors="0" failures="5" hostname="Elmahdi-pc" name="biblio.LivreControllerTests" tests="8" time="0.912" timestamp="2014-04-21T02:07:41">
   <properties />
-  <testcase classname="biblio.LivreControllerTests" name="testList" time="0.27" />
-  <testcase classname="biblio.LivreControllerTests" name="testSave" time="0.128">
-    <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/livre/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@73b57a52&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+  <testcase classname="biblio.LivreControllerTests" name="testList" time="0.276" />
+  <testcase classname="biblio.LivreControllerTests" name="testSave" time="0.085">
+    <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/livre/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@5cfa9784&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
 
 assert response.redirectedUrl == &apos;/livre/show/1&apos;
        |        |             |
        |        null          false
-       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@73b57a52
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@5cfa9784
 
 	at biblio.LivreControllerTests.testSave(LivreControllerTests.groovy:48)
 </failure>
   </testcase>
-  <testcase classname="biblio.LivreControllerTests" name="testDelete" time="0.13">
-    <failure message="Assertion failed: &#xa;&#xa;assert livre.save() != null&#xa;       |     |      |&#xa;       |     null   false&#xa;       biblio.Livre@6eb89654 (toString() == null)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+  <testcase classname="biblio.LivreControllerTests" name="testDelete" time="0.14">
+    <failure message="Assertion failed: &#xa;&#xa;assert livre.save() != null&#xa;       |     |      |&#xa;       |     null   false&#xa;       biblio.Livre@682268dd (toString() == null)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
 
 assert livre.save() != null
        |     |      |
        |     null   false
-       biblio.Livre@6eb89654 (toString() == null)
+       biblio.Livre@682268dd (toString() == null)
 
 	at biblio.LivreControllerTests.testDelete(LivreControllerTests.groovy:144)
 </failure>
   </testcase>
-  <testcase classname="biblio.LivreControllerTests" name="testUpdate" time="0.058">
-    <failure message="Assertion failed: &#xa;&#xa;assert livre.save() != null&#xa;       |     |      |&#xa;       |     null   false&#xa;       biblio.Livre@4e6c5530 (toString() == null)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+  <testcase classname="biblio.LivreControllerTests" name="testUpdate" time="0.054">
+    <failure message="Assertion failed: &#xa;&#xa;assert livre.save() != null&#xa;       |     |      |&#xa;       |     null   false&#xa;       biblio.Livre@749faca4 (toString() == null)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
 
 assert livre.save() != null
        |     |      |
        |     null   false
-       biblio.Livre@4e6c5530 (toString() == null)
+       biblio.Livre@749faca4 (toString() == null)
 
 	at biblio.LivreControllerTests.testUpdate(LivreControllerTests.groovy:100)
 </failure>
   </testcase>
-  <testcase classname="biblio.LivreControllerTests" name="testIndex" time="0.061" />
-  <testcase classname="biblio.LivreControllerTests" name="testShow" time="0.083">
-    <failure message="Assertion failed: &#xa;&#xa;assert livre.save() != null&#xa;       |     |      |&#xa;       |     null   false&#xa;       biblio.Livre@51a9e7fc (toString() == null)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+  <testcase classname="biblio.LivreControllerTests" name="testIndex" time="0.046" />
+  <testcase classname="biblio.LivreControllerTests" name="testShow" time="0.048">
+    <failure message="Assertion failed: &#xa;&#xa;assert livre.save() != null&#xa;       |     |      |&#xa;       |     null   false&#xa;       biblio.Livre@1913d60 (toString() == null)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
 
 assert livre.save() != null
        |     |      |
        |     null   false
-       biblio.Livre@51a9e7fc (toString() == null)
+       biblio.Livre@1913d60 (toString() == null)
 
 	at biblio.LivreControllerTests.testShow(LivreControllerTests.groovy:62)
 </failure>
   </testcase>
-  <testcase classname="biblio.LivreControllerTests" name="testEdit" time="0.056">
-    <failure message="Assertion failed: &#xa;&#xa;assert livre.save() != null&#xa;       |     |      |&#xa;       |     null   false&#xa;       biblio.Livre@6d94d958 (toString() == null)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+  <testcase classname="biblio.LivreControllerTests" name="testEdit" time="0.051">
+    <failure message="Assertion failed: &#xa;&#xa;assert livre.save() != null&#xa;       |     |      |&#xa;       |     null   false&#xa;       biblio.Livre@3d8a5c02 (toString() == null)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
 
 assert livre.save() != null
        |     |      |
        |     null   false
-       biblio.Livre@6d94d958 (toString() == null)
+       biblio.Livre@3d8a5c02 (toString() == null)
 
 	at biblio.LivreControllerTests.testEdit(LivreControllerTests.groovy:80)
 </failure>
   </testcase>
-  <testcase classname="biblio.LivreControllerTests" name="testCreate" time="0.058" />
+  <testcase classname="biblio.LivreControllerTests" name="testCreate" time="0.071" />
   <system-out><![CDATA[--Output from testList--
 --Output from testSave--
 --Output from testDelete--

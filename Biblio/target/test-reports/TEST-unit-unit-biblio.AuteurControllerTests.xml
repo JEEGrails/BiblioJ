@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="5" hostname="Elmahdi-pc" name="biblio.AuteurControllerTests" tests="8" time="0.916" timestamp="2014-04-21T01:46:47">
+<testsuite errors="0" failures="5" hostname="Elmahdi-pc" name="biblio.AuteurControllerTests" tests="8" time="1.294" timestamp="2014-04-21T02:07:40">
   <properties />
-  <testcase classname="biblio.AuteurControllerTests" name="testList" time="0.253" />
-  <testcase classname="biblio.AuteurControllerTests" name="testSave" time="0.087">
-    <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/auteur/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@caa4a34&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+  <testcase classname="biblio.AuteurControllerTests" name="testList" time="0.494" />
+  <testcase classname="biblio.AuteurControllerTests" name="testSave" time="0.124">
+    <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/auteur/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@59d8994&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
 
 assert response.redirectedUrl == &apos;/auteur/show/1&apos;
        |        |             |
        |        null          false
-       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@caa4a34
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@59d8994
 
 	at biblio.AuteurControllerTests.testSave(AuteurControllerTests.groovy:48)
 </failure>
   </testcase>
-  <testcase classname="biblio.AuteurControllerTests" name="testDelete" time="0.117">
+  <testcase classname="biblio.AuteurControllerTests" name="testDelete" time="0.152">
     <failure message="Assertion failed: &#xa;&#xa;assert auteur.save() != null&#xa;       |      |      |&#xa;       |      null   false&#xa;       null null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
 
 assert auteur.save() != null
@@ -24,7 +24,7 @@ assert auteur.save() != null
 	at biblio.AuteurControllerTests.testDelete(AuteurControllerTests.groovy:144)
 </failure>
   </testcase>
-  <testcase classname="biblio.AuteurControllerTests" name="testUpdate" time="0.09">
+  <testcase classname="biblio.AuteurControllerTests" name="testUpdate" time="0.08">
     <failure message="Assertion failed: &#xa;&#xa;assert auteur.save() != null&#xa;       |      |      |&#xa;       |      null   false&#xa;       null null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
 
 assert auteur.save() != null
@@ -35,7 +35,7 @@ assert auteur.save() != null
 	at biblio.AuteurControllerTests.testUpdate(AuteurControllerTests.groovy:100)
 </failure>
   </testcase>
-  <testcase classname="biblio.AuteurControllerTests" name="testIndex" time="0.08" />
+  <testcase classname="biblio.AuteurControllerTests" name="testIndex" time="0.076" />
   <testcase classname="biblio.AuteurControllerTests" name="testShow" time="0.066">
     <failure message="Assertion failed: &#xa;&#xa;assert auteur.save() != null&#xa;       |      |      |&#xa;       |      null   false&#xa;       null null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
 
@@ -47,7 +47,7 @@ assert auteur.save() != null
 	at biblio.AuteurControllerTests.testShow(AuteurControllerTests.groovy:62)
 </failure>
   </testcase>
-  <testcase classname="biblio.AuteurControllerTests" name="testEdit" time="0.06">
+  <testcase classname="biblio.AuteurControllerTests" name="testEdit" time="0.073">
     <failure message="Assertion failed: &#xa;&#xa;assert auteur.save() != null&#xa;       |      |      |&#xa;       |      null   false&#xa;       null null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
 
 assert auteur.save() != null
@@ -58,7 +58,7 @@ assert auteur.save() != null
 	at biblio.AuteurControllerTests.testEdit(AuteurControllerTests.groovy:80)
 </failure>
   </testcase>
-  <testcase classname="biblio.AuteurControllerTests" name="testCreate" time="0.062" />
+  <testcase classname="biblio.AuteurControllerTests" name="testCreate" time="0.067" />
   <system-out><![CDATA[--Output from testList--
 --Output from testSave--
 --Output from testDelete--
