@@ -11,7 +11,18 @@ import org.junit.*
 @TestFor(Reservation)
 class ReservationTests {
 
-    void testSomething() {
-       fail "Implement me"
+   void testConstraintCodeNull() {
+       def reservation = new Reservation();
+	   assertFalse reservation.validate()
     }
+
+	void testConstraintsValidees() {
+		def reservation = new Reservation(code : "NULL", dateReservation : new Date())
+		assertTrue reservation.validate()
+	}
+
+	void testToString() {
+		def reservation = new Reservation(code : "NULL", dateReservation : new Date())
+		assertEquals("NULL", reservation.toString())
+	}
 }
